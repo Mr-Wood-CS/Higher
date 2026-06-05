@@ -1,8 +1,16 @@
-site_name: Unit 1 - Software Design and Development
+site_name: Higher Computer Science
 
 nav:
     - Home: 'index.md'
-    - Development Methodologies: '1.0-development-methodologies.md'
+    - Software Design and Development: 
+        - Development Methodologies:
+          - Explanation: '1.1-development-methodologies.md'
+          - Agile Methodologies: '1.2-agile-methodologies.md'
+          - Iterative Methodologies: '1.3-the-iterative-development-Process.md'
+        - Analysis:
+          - Explanation: '2.1-analysis.md'
+          - Analysis Tasks: '2.1.1-analysis-tasks.md'
+
 
       
 markdown_extensions:
