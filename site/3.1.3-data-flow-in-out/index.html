@@ -9,24 +9,26 @@
       
       
       
+        <link rel="prev" href="../3.1.2-pseudocodeV1/">
+      
       
       
         
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Higher Computer Science</title>
+        <title>Data Flow In and Out - Higher Computer Science</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
   
@@ -110,9 +112,9 @@
       
     
     
-      <link rel="stylesheet" href="/Styles/extra.css">
+      <link rel="stylesheet" href="../Styles/extra.css">
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -134,6 +136,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#data-flow-in-and-out" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -146,7 +153,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="Higher Computer Science" class="md-header__button md-logo" aria-label="Higher Computer Science" data-md-component="logo">
+    <a href=".." title="Higher Computer Science" class="md-header__button md-logo" aria-label="Higher Computer Science" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -166,7 +173,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Data Flow In and Out
             
           </span>
         </div>
@@ -233,7 +240,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/." class="md-tabs__link">
+      <a href=".." class="md-tabs__link">
         
   
   
@@ -250,6 +257,8 @@
   
   
   
+    
+  
   
     
     
@@ -257,11 +266,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/1.1-development-methodologies/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../1.1-development-methodologies/" class="md-tabs__link">
           
   
   
@@ -306,7 +317,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Higher Computer Science" class="md-nav__button md-logo" aria-label="Higher Computer Science" data-md-component="logo">
+    <a href=".." title="Higher Computer Science" class="md-nav__button md-logo" aria-label="Higher Computer Science" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -324,7 +335,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -348,8 +359,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -363,17 +376,20 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -391,7 +407,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -467,7 +483,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/1.1-development-methodologies/" class="md-nav__link">
+      <a href="../1.1-development-methodologies/" class="md-nav__link">
         
   
   
@@ -495,7 +511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/1.2-agile-methodologies/" class="md-nav__link">
+      <a href="../1.2-agile-methodologies/" class="md-nav__link">
         
   
   
@@ -523,7 +539,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/1.3-the-iterative-development-Process/" class="md-nav__link">
+      <a href="../1.3-the-iterative-development-Process/" class="md-nav__link">
         
   
   
@@ -615,7 +631,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/2.1-analysis/" class="md-nav__link">
+      <a href="../2.1-analysis/" class="md-nav__link">
         
   
   
@@ -643,7 +659,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/2.1.1-analysis-tasks/" class="md-nav__link">
+      <a href="../2.1.1-analysis-tasks/" class="md-nav__link">
         
   
   
@@ -676,8 +692,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -696,11 +714,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
         
           
           <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
@@ -721,7 +739,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -739,7 +757,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/3.1-design/" class="md-nav__link">
+      <a href="../3.1-design/" class="md-nav__link">
         
   
   
@@ -767,7 +785,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/3.1.1-structure-diagrams/" class="md-nav__link">
+      <a href="../3.1.1-structure-diagrams/" class="md-nav__link">
         
   
   
@@ -795,7 +813,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/3.1.2-pseudocodeV1/" class="md-nav__link">
+      <a href="../3.1.2-pseudocodeV1/" class="md-nav__link">
         
   
   
@@ -820,10 +838,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/3.1.3-data-flow-in-out/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Flow In and Out
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -839,6 +884,103 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-counts-as-data-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Counts as Data Flow?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#in-out-and-inout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        In, Out, and In/Out
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-flow-in-pseudocode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Flow in Pseudocode
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-flow-in-a-structure-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Flow in a Structure Diagram
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#link-to-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Link to Parameters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -876,6 +1018,93 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-counts-as-data-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Counts as Data Flow?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#in-out-and-inout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        In, Out, and In/Out
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-flow-in-pseudocode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Flow in Pseudocode
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-flow-in-a-structure-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Flow in a Structure Diagram
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#link-to-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Link to Parameters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -893,11 +1122,216 @@
   
 
 
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href=".." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../1.1-development-methodologies/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Software Design and Development
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../3.1-design/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Design
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
               
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+
+<h1 id="data-flow-in-and-out">Data Flow In and Out</h1>
+<div class="admonition info">
+<p class="admonition-title">What You Need to Know</p>
+<p>You must be able to identify the data that flows <strong>into</strong> and <strong>out of</strong> modules in a design.</p>
+</div>
+<h2 id="purpose">Purpose</h2>
+<p><strong>Data flow</strong> is the information passed between modules.</p>
+<p>Use:</p>
+<ul>
+<li><code>IN</code> for data a module needs</li>
+<li><code>OUT</code> for data a module produces</li>
+</ul>
+<p>Example:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Calculate percentages
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>IN: prelimMark(), courseMark()
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>OUT: percentage()
+</span></code></pre></div>
+<p>This module needs <code>prelimMark()</code> and <code>courseMark()</code> before it can work. It produces <code>percentage()</code> for another module to use later.</p>
+<h2 id="what-counts-as-data-flow">What Counts as Data Flow?</h2>
+<p>Data flow is only about data being passed between modules.</p>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Is it data flow?</th>
+<th>Why?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>User types a mark</td>
+<td>No</td>
+<td>The data comes from the user</td>
+</tr>
+<tr>
+<td>A module reads names from a file</td>
+<td>No</td>
+<td>The file is external to the module structure</td>
+</tr>
+<tr>
+<td>A module passes <code>names()</code> to another module</td>
+<td>Yes</td>
+<td>Data moves between modules</td>
+</tr>
+<tr>
+<td>A module displays a result on screen</td>
+<td>No</td>
+<td>The result is sent to the user</td>
+</tr>
+<tr>
+<td>A module returns <code>topPosition</code></td>
+<td>Yes</td>
+<td>Data is passed back to another part of the program</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Common mistake</p>
+<p>Do not list the keyboard, screen, or a file as data flow. Show the variables or arrays that are passed between modules.</p>
+</div>
+<h2 id="in-out-and-inout">In, Out, and In/Out</h2>
+<table>
+<thead>
+<tr>
+<th>Direction</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>IN</code></td>
+<td>Data passed into a module</td>
+<td><code>names()</code></td>
+</tr>
+<tr>
+<td><code>OUT</code></td>
+<td>Data passed out of a module</td>
+<td><code>foundPosition</code></td>
+</tr>
+<tr>
+<td><code>IN/OUT</code></td>
+<td>Data passed in, changed, and passed back out</td>
+<td><code>total</code></td>
+</tr>
+</tbody>
+</table>
+<p>Some designs show changed data as both <code>IN</code> and <code>OUT</code>. The important point is that the data movement is clear.</p>
+<h2 id="data-flow-in-pseudocode">Data Flow in Pseudocode</h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>1 Get song data
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  OUT: songName(), artistName(), downloads()
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>2 Find most-downloaded song
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  IN: downloads()
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>  OUT: topPosition
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>3 Display most-downloaded song
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>  IN: songName(), artistName(), downloads(), topPosition
+</span></code></pre></div>
+<p>The first module may read from a file, but the file is not shown as <code>IN</code>. The arrays are shown as <code>OUT</code> because they are passed to later modules.</p>
+<h2 id="data-flow-in-a-structure-diagram">Data Flow in a Structure Diagram</h2>
+<figure>
+  <img alt="Structure diagram with data flow" src="../Images/SD_Data_Flow.svg" width="800" />
+</figure>
+<p>The same information can be shown in a table if the diagram becomes crowded.</p>
+<figure>
+  <img alt="Data flow table" src="../Images/SD_Data_Flow_Table.png" width="450" />
+</figure>
+<h2 id="link-to-parameters">Link to Parameters</h2>
+<p>Data flow helps you decide the parameters for procedures and functions.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Find position of pupil with top mark
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>IN: percentage()
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>OUT: topPosition
+</span></code></pre></div>
+<p>This could become a function that receives <code>percentage</code> as a parameter and returns <code>topPosition</code>.</p>
+<h2 id="checklist">Checklist</h2>
+<p>A good data flow design should:</p>
+<ul>
+<li>use meaningful data names</li>
+<li>show arrays clearly, often using brackets such as <code>marks()</code></li>
+<li>avoid listing files, screens, or keyboards as data flow</li>
+<li>match the modules in the structure diagram or pseudocode</li>
+<li>make the parameters for implementation clear</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -944,10 +1378,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "/", "features": ["content.code.copy", "content.code.annotate", "navigation.tabs.sticky", "navigation.top", "navigation.indexes", "navigation.path", "navigation.tabs"], "search": "/assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.code.annotate", "navigation.tabs.sticky", "navigation.top", "navigation.indexes", "navigation.path", "navigation.tabs"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
