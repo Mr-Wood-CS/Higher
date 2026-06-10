@@ -4,18 +4,20 @@ nav:
     - Home: 'index.md'
     - Software Design and Development: 
         - Development Methodologies:
-          - Explanation: '1.1-development-methodologies.md'
-          - Agile Methodologies: '1.2-agile-methodologies.md'
-          - Iterative Methodologies: '1.3-the-iterative-development-Process.md'
+          - Explanation: '01-software-development/1.1-development-methodologies.md'
+          - Agile Methodologies: '01-software-development/1.2-agile-methodologies.md'
+          - Iterative Methodologies: '01-software-development/1.3-the-iterative-development-Process.md'
         - Analysis:
-          - Explanation: '2.1-analysis.md'
-          - Analysis Tasks: '2.1.1-analysis-tasks.md'
+          - Explanation: '01-software-development/2.1-analysis.md'
+          - Analysis Tasks: '01-software-development/2.1.1-analysis-tasks.md'
         - Design:
-          - Explanation: '3.1-design.md'
-          - Structure Diagrams: '3.1.1-structure-diagrams.md'
-          - Pseudocode: '3.1.2-pseudocodeV1.md'
-          - Data Flow In and Out: '3.1.3-data-flow-in-out.md'
-
+          - Explanation: '01-software-development/3.1-design.md'
+          - Structure Diagrams: '01-software-development/3.1.1-structure-diagrams.md'
+          - Pseudocode: '01-software-development/3.1.2-pseudocodeV1.md'
+          - Data Flow In and Out: '01-software-development/3.1.3-data-flow-in-out.md'
+    - Computer Systems:
+        - Data Representation:
+          - Two's Complement: '02-computer-systems/1.0_Twos_Compliment.md'
 
       
 markdown_extensions:
