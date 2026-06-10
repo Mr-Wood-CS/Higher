@@ -17,7 +17,9 @@ nav:
           - Data Flow In and Out: '01-software-development/3.1.3-data-flow-in-out.md'
     - Computer Systems:
         - Data Representation:
-          - Two's Complement: '02-computer-systems/1.0_Twos_Compliment.md'
+          - Storing Negative Numbers: 
+            - Two's Compliment: '02-computer-systems/2.1-twos-compliment.md'
+            - Tasks: '02-computer-systems/2.1.1-twos-compliment-tasks.md'
 
       
 markdown_extensions:
