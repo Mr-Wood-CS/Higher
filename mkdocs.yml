@@ -16,6 +16,7 @@ nav:
           - Structure Diagrams: '01-software-development/3.1.1-structure-diagrams.md'
           - Pseudocode: '01-software-development/3.1.2-pseudocodeV1.md'
           - Wireframes: '01-software-development/3.1.4-wireframes.md'
+          - Design Tasks: '01-software-development/3.1.5-design-modules-data-flow-tasks.md'
     - Computer Systems:
         - Data Representation:
           - Storing Negative Numbers: 
