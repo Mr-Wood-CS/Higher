@@ -9,7 +9,7 @@
         <link rel="prev" href="../3.1.1-structure-diagrams/">
       
       
-        <link rel="next" href="../3.1.3-data-flow-in-out/">
+        <link rel="next" href="../3.1.4-wireframes/">
       
       
         
@@ -718,6 +718,8 @@
       
         
       
+        
+      
     
     
     
@@ -776,6 +778,34 @@
     
   
     Explanation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.1.3-data-flow-in-out/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Flow In and Out
   
 
     
@@ -895,6 +925,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#national-5-to-higher" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        National 5 to Higher
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#main-algorithm" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -950,10 +991,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#checklist" class="md-nav__link">
+  <a href="#common-mistakes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Checklist
+        Common Mistakes
       
     </span>
   </a>
@@ -965,6 +1006,28 @@
     <span class="md-ellipsis">
       
         Practice
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
       
     </span>
   </a>
@@ -987,14 +1050,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../3.1.3-data-flow-in-out/" class="md-nav__link">
+      <a href="../3.1.4-wireframes/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Data Flow In and Out
+    Wireframes
   
 
     
@@ -1304,6 +1367,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#national-5-to-higher" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        National 5 to Higher
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#main-algorithm" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1359,10 +1433,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#checklist" class="md-nav__link">
+  <a href="#common-mistakes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Checklist
+        Common Mistakes
       
     </span>
   </a>
@@ -1374,6 +1448,28 @@
     <span class="md-ellipsis">
       
         Practice
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
       
     </span>
   </a>
@@ -1478,125 +1574,206 @@
 </div>
 <h2 id="purpose">Purpose</h2>
 <p><strong>Pseudocode</strong> is a way of designing an algorithm using structured English instead of a specific programming language.</p>
-<p>At Higher level, pseudocode is used to show:</p>
+<p>It is not finished program code. It is a design that explains the logic clearly enough for a programmer to implement later.</p>
+<p>At Higher, pseudocode is used to show:</p>
 <ul>
 <li>the main algorithm, also called the top-level design</li>
 <li>data flow in and out of modules</li>
 <li>refinements for modules that need more detail</li>
+<li>important loops, decisions, and calculations</li>
 </ul>
+<h2 id="national-5-to-higher">National 5 to Higher</h2>
+<p>At National 5, pseudocode often focuses on the steps needed to solve a problem.</p>
+<p>At Higher, pseudocode needs to show more design detail. It should make clear how the solution is split into modules and what data moves between them.</p>
+<table>
+<thead>
+<tr>
+<th>National 5 pseudocode</th>
+<th>Higher pseudocode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Shows the steps in an algorithm</td>
+<td>Shows the top-level design and refinements</td>
+</tr>
+<tr>
+<td>May focus on one sequence of instructions</td>
+<td>Is usually split into modules</td>
+</tr>
+<tr>
+<td>May not show data flow</td>
+<td>Should show <code>IN</code> and <code>OUT</code> data flow</td>
+</tr>
+<tr>
+<td>Helps plan the logic</td>
+<td>Helps plan procedures, functions, and parameters</td>
+</tr>
+</tbody>
+</table>
+<p>The key difference is that Higher pseudocode should show the structure of the solution, not just a list of instructions.</p>
 <h2 id="main-algorithm">Main Algorithm</h2>
 <p>The <strong>main algorithm</strong> shows the major steps of the solution.</p>
 <p>It should list the main tasks in a logical order without adding every small programming detail.</p>
+<p>For example:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>1 Get results
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>2 Calculate percentages
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>3 Find position of pupil with top mark
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>4 Display pupil with top mark
 </span></code></pre></div>
-<p>Each main step represents a module that could become a procedure or function in the final program.</p>
+<p>Each main step represents a module. In the final program, these modules could become procedures or functions.</p>
 <h2 id="adding-data-flow">Adding Data Flow</h2>
-<p>Data flow is written beside each main step using <code>IN</code> and <code>OUT</code>.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>1 Get results
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  OUT: pupilName(), prelimMark(), courseMark()
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>2 Calculate percentages
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  IN: prelimMark(), courseMark()
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>  OUT: percentage()
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>3 Find position of pupil with top mark
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>  IN: percentage()
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>  OUT: topPosition
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>4 Display pupil with top mark
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>  IN: pupilName(), percentage(), topPosition
-</span></code></pre></div>
+<p>At Higher, each main step should show the data it needs and the data it produces.</p>
+<p>This is often shown with the pseudocode on the left and the data flow on the right.</p>
+<p>Use:</p>
+<ul>
+<li><code>IN</code> for data passed into a module</li>
+<li><code>OUT</code> for data passed out of a module</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pseudocode</th>
+<th>Data flow</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>1 Get results</code></td>
+<td><code>OUT: pupilName(), prelimMark(), courseMark()</code></td>
+</tr>
+<tr>
+<td><code>2 Calculate percentages</code></td>
+<td><code>IN: prelimMark(), courseMark()</code><br><code>OUT: percentage()</code></td>
+</tr>
+<tr>
+<td><code>3 Find position of pupil with top mark</code></td>
+<td><code>IN: percentage()</code><br><code>OUT: topPosition</code></td>
+</tr>
+<tr>
+<td><code>4 Display pupil with top mark</code></td>
+<td><code>IN: pupilName(), percentage(), topPosition</code></td>
+</tr>
+</tbody>
+</table>
 <p>The brackets in names such as <code>pupilName()</code> and <code>percentage()</code> show that they are arrays.</p>
 <p>For more help deciding what should be <code>IN</code> or <code>OUT</code>, see <a href="../3.1.3-data-flow-in-out/">Data Flow In and Out</a>.</p>
 <h2 id="adding-refinements">Adding Refinements</h2>
 <p>A <strong>refinement</strong> breaks one main step into smaller steps.</p>
+<p>You use a refinement when a main step is too broad and needs more detail before it could be implemented.</p>
 <p>The numbering shows which main step is being refined.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>1 Get results
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>  OUT: pupilName(), prelimMark(), courseMark()
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>1.1 Open marks file
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>1.2 Start fixed loop for each pupil
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>1.3 Read pupil name into pupilName()
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>1.4 Read prelim mark into prelimMark()
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>1.5 Read course mark into courseMark()
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>1.6 End fixed loop
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>1.7 Close marks file
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>1 Get results
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>1.1 Open marks file
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>1.2 Start fixed loop for each pupil
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>1.3 Read pupil name into pupilName()
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>1.4 Read prelim mark into prelimMark()
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>1.5 Read course mark into courseMark()
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>1.6 End fixed loop
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>1.7 Close marks file
 </span></code></pre></div>
 <p>The main step says what the module does. The refinement explains how it does it.</p>
+<p>You do not need to refine every main step. A step only needs refinement if it is complex or unclear.</p>
 <h2 id="complete-example">Complete Example</h2>
 <p>The pseudocode below designs a program that reads pupil marks from a file, calculates percentages, finds the top pupil, and displays the result.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>1 Get results
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>  OUT: pupilName(), prelimMark(), courseMark()
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>2 Calculate percentages
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>  IN: prelimMark(), courseMark()
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>  OUT: percentage()
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>3 Find position of pupil with top mark
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>  IN: percentage()
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>  OUT: topPosition
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
-</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>4 Display pupil with top mark
-</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>  IN: pupilName(), percentage(), topPosition
-</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>
-</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>1.1 Open marks file
-</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>1.2 Start fixed loop for each pupil
-</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>1.3 Read pupil name into pupilName()
-</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>1.4 Read prelim mark into prelimMark()
-</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>1.5 Read course mark into courseMark()
-</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>1.6 End fixed loop
-</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>1.7 Close marks file
-</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>
-</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>2.1 Start fixed loop for each pupil
-</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>2.2 Set percentage() to (prelimMark() + courseMark()) / 1.5
-</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>2.3 End fixed loop
-</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>
-</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>3.1 Set topPosition to first position
-</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>3.2 Start fixed loop from second pupil
-</span><span id="__span-3-29"><a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>3.3 If percentage() is greater than percentage(topPosition) then
-</span><span id="__span-3-30"><a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>3.4     Set topPosition to current position
-</span><span id="__span-3-31"><a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>3.5 End if
-</span><span id="__span-3-32"><a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>3.6 End fixed loop
-</span><span id="__span-3-33"><a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a>
-</span><span id="__span-3-34"><a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a>4.1 Display pupilName(topPosition), percentage(topPosition)
+<p>First, the top-level design and data flow are shown.</p>
+<table>
+<thead>
+<tr>
+<th>Pseudocode</th>
+<th>Data flow</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>1 Get results</code></td>
+<td><code>OUT: pupilName(), prelimMark(), courseMark()</code></td>
+</tr>
+<tr>
+<td><code>2 Calculate percentages</code></td>
+<td><code>IN: prelimMark(), courseMark()</code><br><code>OUT: percentage()</code></td>
+</tr>
+<tr>
+<td><code>3 Find position of pupil with top mark</code></td>
+<td><code>IN: percentage()</code><br><code>OUT: topPosition</code></td>
+</tr>
+<tr>
+<td><code>4 Display pupil with top mark</code></td>
+<td><code>IN: pupilName(), percentage(), topPosition</code></td>
+</tr>
+</tbody>
+</table>
+<p>Then, refinements are added for modules that need more detail.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>1.1 Open marks file
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>1.2 Start fixed loop for each pupil
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>1.3 Read pupil name into pupilName()
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>1.4 Read prelim mark into prelimMark()
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>1.5 Read course mark into courseMark()
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>1.6 End fixed loop
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>1.7 Close marks file
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>2.1 Start fixed loop for each pupil
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>2.2 Set percentage() to (prelimMark() + courseMark()) / 1.5
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>2.3 End fixed loop
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>3.1 Set topPosition to first position
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>3.2 Start fixed loop from second pupil
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>3.3 If percentage() is greater than percentage(topPosition) then
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>3.4     Set topPosition to current position
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>3.5 End if
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>3.6 End fixed loop
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>4.1 Display pupilName(topPosition), percentage(topPosition)
 </span></code></pre></div>
+<p>This is detailed enough for a programmer to implement, but it is still a design rather than finished code.</p>
 <h2 id="how-much-detail-is-enough">How Much Detail is Enough?</h2>
-<p>Pseudocode should be detailed enough for a programmer to implement, but it does not need exact language syntax.</p>
+<p>Pseudocode should be clear enough to implement, but it does not need exact programming language syntax.</p>
 <p>Suitable design pseudocode:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>3.3 If percentage() is greater than percentage(topPosition) then
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>3.3 If percentage() is greater than percentage(topPosition) then
 </span></code></pre></div>
 <p>Finished Python code:</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">if</span> <span class="n">percentage</span><span class="p">[</span><span class="n">counter</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">percentage</span><span class="p">[</span><span class="n">top_position</span><span class="p">]:</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">if</span> <span class="n">percentage</span><span class="p">[</span><span class="n">counter</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">percentage</span><span class="p">[</span><span class="n">top_position</span><span class="p">]:</span>
 </span></code></pre></div>
-<p>At the design stage, the first version is enough.</p>
+<p>At the design stage, the first version is enough because it clearly explains the decision being made.</p>
+<h2 id="common-mistakes">Common Mistakes</h2>
+<p>Avoid these mistakes in Higher pseudocode:</p>
+<ul>
+<li>writing vague steps such as <code>Process data</code></li>
+<li>missing <code>IN</code> and <code>OUT</code> data flow</li>
+<li>refining a step with code that is too language-specific</li>
+<li>adding refinements that do not match the main algorithm numbering</li>
+<li>showing keyboard, screen, or file as data flow instead of variables or arrays</li>
+</ul>
+<h2 id="practice">Practice</h2>
+<p>Read the main algorithm below.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>1 Load product data
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>2 Calculate total stock value
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>3 Find product with lowest stock
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>4 Display stock report
+</span></code></pre></div>
+<p>Step <code>3</code> could be refined as:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>3.1 Set lowestPosition to first position
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>3.2 Start fixed loop from second product
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>3.3 If stockLevel() is less than stockLevel(lowestPosition) then
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>3.4     Set lowestPosition to current position
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>3.5 End if
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>3.6 End fixed loop
+</span></code></pre></div>
+<p>This refinement gives the logic for finding the lowest stock level without turning the design into full program code.</p>
 <h2 id="checklist">Checklist</h2>
-<p>Good pseudocode should:</p>
+<p>Good Higher pseudocode should:</p>
 <ul>
 <li>use clear module names</li>
 <li>show <code>IN</code> and <code>OUT</code> data flow</li>
 <li>number refinements to match the main algorithm</li>
 <li>include important loops, decisions, and calculations</li>
-<li>avoid vague steps such as <code>Process data</code></li>
+<li>be detailed enough for a programmer to implement</li>
 <li>avoid becoming full program code too early</li>
 </ul>
-<h2 id="practice">Practice</h2>
-<p>Read the main algorithm below.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>1 Load product data
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>2 Calculate total stock value
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>3 Find product with lowest stock
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>4 Display stock report
-</span></code></pre></div>
-<p>Step <code>3</code> could be refined as:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>3.1 Set lowestPosition to first position
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>3.2 Start fixed loop from second product
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>3.3 If stockLevel() is less than stockLevel(lowestPosition) then
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>3.4     Set lowestPosition to current position
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>3.5 End if
-</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>3.6 End fixed loop
-</span></code></pre></div>
+<h2 id="summary">Summary</h2>
+<p>Pseudocode is a design technique used to describe an algorithm without using a specific programming language.</p>
+<p>At Higher, pseudocode should show the top-level design, data flow, and refinements. It should make clear what each module does, what data it needs, and what data it produces.</p>
+<p>A good Higher pseudocode design should help another programmer understand how the solution will work before implementation begins.</p>
 
 
 

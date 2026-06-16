@@ -12,9 +12,10 @@ nav:
           - Analysis Tasks: '01-software-development/2.1.1-analysis-tasks.md'
         - Design:
           - Explanation: '01-software-development/3.1-design.md'
+          - Data Flow In and Out: '01-software-development/3.1.3-data-flow-in-out.md'
           - Structure Diagrams: '01-software-development/3.1.1-structure-diagrams.md'
           - Pseudocode: '01-software-development/3.1.2-pseudocodeV1.md'
-          - Data Flow In and Out: '01-software-development/3.1.3-data-flow-in-out.md'
+          - Wireframes: '01-software-development/3.1.4-wireframes.md'
     - Computer Systems:
         - Data Representation:
           - Storing Negative Numbers: 
