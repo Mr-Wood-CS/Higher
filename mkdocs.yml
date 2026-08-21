@@ -26,7 +26,9 @@ nav:
           - Computational Constructs:
             - Parameter Passing: '01-software-development/4.4-parameter-passing.md'
             - Scope of Variables: '01-software-development/4.5-scope-of-variables.md'
-            - Sub-programs: '01-software-development/4.6-sub-programs.md'
+            - Sub-programs:
+              - Explanation: '01-software-development/4.6-sub-programs.md'
+              - Tasks: '01-software-development/4.6.1-sub-programs-tasks.md'
             - Pre-defined Functions: '01-software-development/4.7-pre-defined-functions.md'
             - File Handling — CSV: '01-software-development/4.8-file-handling-csv.md'
             - File Handling — Text: '01-software-development/4.9-file-handling-txt.md'
