@@ -19,23 +19,19 @@ nav:
           - Design Tasks: '01-software-development/3.1.5-design-modules-data-flow-tasks.md'
         - Implementation:
           - Overview: '01-software-development/4.0-implementation-overview.md'
-          - Data Types and Structures:
-            - Parallel 1D Arrays: '01-software-development/4.1-parallel-1d-arrays.md'
-            - Records: '01-software-development/4.2-records.md'
-            - Arrays of Records: '01-software-development/4.3-arrays-of-records.md'
-          - Computational Constructs:
-            - Parameter Passing: '01-software-development/4.4-parameter-passing.md'
-            - Scope of Variables: '01-software-development/4.5-scope-of-variables.md'
-            - Sub-programs:
-              - Explanation: '01-software-development/4.6-sub-programs.md'
-              - Tasks: '01-software-development/4.6.1-sub-programs-tasks.md'
-            - Pre-defined Functions: '01-software-development/4.7-pre-defined-functions.md'
-            - File Handling — CSV: '01-software-development/4.8-file-handling-csv.md'
-            - File Handling — Text: '01-software-development/4.9-file-handling-txt.md'
-          - Standard Algorithms:
-            - Linear Search: '01-software-development/4.10-linear-search.md'
-            - Finding Minimum and Maximum: '01-software-development/4.11-finding-minimum-and-maximum.md'
-            - Count Occurrences: '01-software-development/4.12-count-occurrences.md'
+          - Sub-programs — Explanation: '01-software-development/4.1-sub-programs.md'
+          - Sub-programs — Tasks: '01-software-development/4.1.1-sub-programs-tasks.md'
+          - Parameter Passing: '01-software-development/4.2-parameter-passing.md'
+          - Scope of Variables: '01-software-development/4.3-scope-of-variables.md'
+          - Pre-defined Functions: '01-software-development/4.4-pre-defined-functions.md'
+          - Parallel 1D Arrays: '01-software-development/4.5-parallel-1d-arrays.md'
+          - Records: '01-software-development/4.6-records.md'
+          - Arrays of Records: '01-software-development/4.7-arrays-of-records.md'
+          - File Handling — Text: '01-software-development/4.8-file-handling-txt.md'
+          - File Handling — CSV: '01-software-development/4.9-file-handling-csv.md'
+          - Linear Search: '01-software-development/4.10-linear-search.md'
+          - Finding Minimum and Maximum: '01-software-development/4.11-finding-minimum-and-maximum.md'
+          - Count Occurrences: '01-software-development/4.12-count-occurrences.md'
     - Computer Systems:
         - Data Representation:
           - Storing Negative Numbers: 
