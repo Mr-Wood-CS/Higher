@@ -3829,28 +3829,49 @@
 </ul>
 <p>The exponent is stored using <strong>two's complement</strong>, so it can represent positive and negative movements of the binary point.</p>
 <p>Before a number is stored, move the binary point so that the mantissa begins <mark>.1</mark>. This is called <strong>normalising</strong> the number.</p>
-<p>The sign bit and the exponent answer different questions:</p>
+<p>The sign bit and the exponent answer different questions. Do not mix them up.</p>
 <table>
 <thead>
 <tr>
-<th>Question</th>
-<th>Positive</th>
-<th>Negative</th>
+<th>To decide the mantissa sign bit</th>
+<th>Result</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Is the mantissa positive or negative?</td>
-<td>Sign bit is <mark>0</mark></td>
-<td>Sign bit is <mark>1</mark></td>
+<td>No minus sign</td>
+<td>Use <mark>0</mark> at the start of the mantissa</td>
 </tr>
 <tr>
-<td>Is the exponent positive or negative?</td>
-<td>Binary point moved left</td>
-<td>Binary point moved right</td>
+<td>Minus sign</td>
+<td>Use <mark>1</mark> at the start of the mantissa</td>
 </tr>
 </tbody>
 </table>
+<table>
+<thead>
+<tr>
+<th>To decide the exponent</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Number is bigger than 1, so the binary point moves left</td>
+<td>Positive exponent</td>
+</tr>
+<tr>
+<td>Number is smaller than 1, so the binary point moves right</td>
+<td>Negative exponent</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Normalising and reading back</p>
+<p>When you are <strong>normalising</strong> the original number, moving the binary point right gives a negative exponent.</p>
+<p>When you are <strong>reading the stored number back</strong>, a negative exponent moves the binary point left again.</p>
+<p>This is because reading it back reverses the normalising step.</p>
+</div>
 <div class="admonition example">
 <p class="admonition-title">Example 1: binary point moves left</p>
 <p>Convert the positive number 100.001101 using a 16-bit mantissa and an 8-bit exponent.</p>
@@ -3950,7 +3971,7 @@
 </table>
 </div>
 <h2 id="representing-a-negative-number">Representing a negative number</h2>
-<p>For a negative value, first normalise the positive magnitude. Then add a <mark>1</mark> at the start of the mantissa to show that the number is negative.</p>
+<p>For a negative value, first normalise the positive magnitude. Then put a <mark>1</mark> sign bit at the start of the mantissa to show that the number is negative.</p>
 <div class="admonition warning">
 <p class="admonition-title">Common misconception</p>
 <p>The mantissa is <strong>not</strong> converted using two's complement at Higher.</p>
@@ -3959,14 +3980,18 @@
 <div class="admonition example">
 <p class="admonition-title">Example 3: negative number</p>
 <p>Convert -1000.00001 using a 16-bit mantissa and an 8-bit exponent.</p>
+<p>This number is negative, but its size is bigger than 1.</p>
+<p>The binary point will move left because of the size of the number.</p>
+<p>The negative sign is shown separately using the mantissa sign bit.</p>
 <p><strong>Step 1: Normalise the positive magnitude</strong></p>
 <p>Ignore the minus sign temporarily and normalise the positive magnitude so the mantissa begins <mark>.1</mark>.</p>
 <p>Move the binary point 4 places left:</p>
 <p>1000.00001 becomes .100000001 × 2<sup>4</sup></p>
-<p>You now add a <mark>1</mark> to show it is negative.</p>
-<p>.100000001 becomes 1.100000001</p>
+<p>The original number was negative, so put a <mark>1</mark> at the start of the mantissa to show it is negative.</p>
 <p>As the binary point moved 4 places to the left, the exponent is therefore <strong>+4</strong>.</p>
-<p>1.100000001 × 2<sup>4</sup></p>
+<p>The normalised magnitude is:</p>
+<p>.100000001 × 2<sup>4</sup></p>
+<p>The stored mantissa will start with <mark>1</mark> because the original number was negative.</p>
 <p><strong>Step 2: Store the mantissa</strong></p>
 <p>Add zeros on the right until the mantissa contains 16 bits:</p>
 <p>1.100000001000000</p>
@@ -4039,7 +4064,7 @@
 <p>As the binary point moved 3 places to the right, the exponent is therefore <strong>-3</strong>.</p>
 <p>0.1101 × 2<sup>-3</sup></p>
 <p><strong>Step 2: Store the mantissa</strong></p>
-<p>Add zeros on the right until the mantissa contains 16 bits:</p>
+<p>Add zeros on the right until the mantissa contains 16 bits, including the sign bit:</p>
 <p>0.110100000000000</p>
 <p>The binary point is not stored, so the stored mantissa is the remaining bits with a <mark>0</mark> at the start because it is a positive number:</p>
 <p><mark>0110 1000 0000 0000</mark></p>
@@ -4089,12 +4114,13 @@
 <p>Ignore the minus sign temporarily and normalise the positive magnitude so the mantissa begins <mark>.1</mark>.</p>
 <p>Move the binary point 1 place right:</p>
 <p>0.01101 becomes .1101 × 2<sup>-1</sup></p>
-<p>You now add a <mark>1</mark> to show it is negative.</p>
-<p>.1101 becomes 1.1101</p>
+<p>The original number was negative, so put a <mark>1</mark> at the start of the mantissa to show it is negative.</p>
 <p>As the binary point moved 1 place to the right, the exponent is therefore <strong>-1</strong>.</p>
-<p>1.1101 × 2<sup>-1</sup></p>
+<p>The normalised magnitude is:</p>
+<p>.1101 × 2<sup>-1</sup></p>
+<p>The stored mantissa will start with <mark>1</mark> because the original number was negative.</p>
 <p><strong>Step 2: Store the mantissa</strong></p>
-<p>Add zeros on the right until the mantissa contains 16 bits:</p>
+<p>Add zeros on the right until the mantissa contains 16 bits, including the sign bit:</p>
 <p>1.110100000000000</p>
 <p>The binary point is not stored, so the stored mantissa is the remaining bits with a <mark>1</mark> at the start because it is a negative number:</p>
 <p><mark>1110 1000 0000 0000</mark></p>

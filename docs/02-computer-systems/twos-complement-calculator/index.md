@@ -4,6 +4,12 @@
 
 Enter the negative number you want to convert, then complete the three rows.
 
+To complete the ==Add 1== row, start at the right-hand side and add ==1== to the flipped bits.
+
+If the last bit is ==0==, change it to ==1==.
+
+If the last bit is ==1==, it becomes ==0== and you carry ==1== to the next column on the left.
+
 <link rel="stylesheet" href="twos-complement-calculator.css">
 
 <div class="tc-calc" data-bits="8">

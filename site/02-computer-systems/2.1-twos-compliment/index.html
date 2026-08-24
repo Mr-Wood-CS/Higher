@@ -3852,52 +3852,48 @@
 <thead>
 <tr>
 <th>Step</th>
-<th>128</th>
-<th>64</th>
-<th>32</th>
-<th>16</th>
-<th>8</th>
-<th>4</th>
-<th>2</th>
-<th>1</th>
+<th>Binary</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Think positive</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
+<td><mark>0100 1011</mark></td>
 </tr>
 <tr>
 <td>Flip the bits</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
+<td><mark>1011 0100</mark></td>
 </tr>
 <tr>
 <td>Add 1</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
+<td><mark>1011 0101</mark></td>
 </tr>
 </tbody>
 </table>
+<p>The <mark>Add 1</mark> row is found by adding <mark>0000 0001</mark> to the flipped bits:</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Binary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Flipped bits</td>
+<td><mark>1011 0100</mark></td>
+</tr>
+<tr>
+<td>Add 1</td>
+<td><mark>0000 0001</mark></td>
+</tr>
+<tr>
+<td>Result</td>
+<td><mark>1011 0101</mark></td>
+</tr>
+</tbody>
+</table>
+<p>In this example, the flipped bits end in <mark>0</mark>, so adding <mark>1</mark> changes the last bit to <mark>1</mark>. There is no carry.</p>
 <p>So <strong>-75</strong> is stored as:</p>
 <p><strong>1011 0101</strong></p>
 </div>
@@ -3910,52 +3906,48 @@
 <thead>
 <tr>
 <th>Step</th>
-<th>128</th>
-<th>64</th>
-<th>32</th>
-<th>16</th>
-<th>8</th>
-<th>4</th>
-<th>2</th>
-<th>1</th>
+<th>Binary</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Think positive</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
+<td><mark>0001 1100</mark></td>
 </tr>
 <tr>
 <td>Flip the bits</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
+<td><mark>1110 0011</mark></td>
 </tr>
 <tr>
 <td>Add 1</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
+<td><mark>1110 0100</mark></td>
 </tr>
 </tbody>
 </table>
+<p>The <mark>Add 1</mark> row is found by adding <mark>0000 0001</mark> to the flipped bits:</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Binary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Flipped bits</td>
+<td><mark>1110 0011</mark></td>
+</tr>
+<tr>
+<td>Add 1</td>
+<td><mark>0000 0001</mark></td>
+</tr>
+<tr>
+<td>Result</td>
+<td><mark>1110 0100</mark></td>
+</tr>
+</tbody>
+</table>
+<p>In this example, the flipped bits end in <mark>11</mark>. Adding <mark>1</mark> changes those ending <mark>1==s to ==0==s until the first ==0</mark> becomes <mark>1</mark>.</p>
 <p>So <strong>-28</strong> is stored as:</p>
 <p><strong>1110 0100</strong></p>
 </div>
