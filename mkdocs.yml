@@ -37,6 +37,9 @@ nav:
           - Storing Negative Numbers: 
             - Two's Compliment: '02-computer-systems/2.1-twos-compliment.md'
             - Tasks: '02-computer-systems/2.1.1-twos-compliment-tasks.md'
+          - Floating-Point Representation:
+            - Explanation: '02-computer-systems/2.2-Floating-Point-Representation.md'
+            - Tasks: '02-computer-systems/2.2.1-floating-point-representation-tasks.md'
     - Program Challenges:
       - Overview: 'program-challenges/index.md'
       - 🔥:
