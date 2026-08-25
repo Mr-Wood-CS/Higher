@@ -19,19 +19,26 @@ nav:
           - Design Tasks: '01-software-development/3.1.5-design-modules-data-flow-tasks.md'
         - Implementation:
           - Overview: '01-software-development/4.0-implementation-overview.md'
-          - Planning with Sub-programs: '01-software-development/4.1-sub-programs.md'
-          - Creating and Calling Sub-programs: '01-software-development/4.2-parameter-passing.md'
-          - Scope of Variables: '01-software-development/4.3-scope-of-variables.md'
-          - Sub-programs — Tasks: '01-software-development/4.1.1-sub-programs-tasks.md'
-          - Pre-defined Functions: '01-software-development/4.4-pre-defined-functions.md'
-          - Parallel 1D Arrays: '01-software-development/4.5-parallel-1d-arrays.md'
-          - Records: '01-software-development/4.6-records.md'
-          - Arrays of Records: '01-software-development/4.7-arrays-of-records.md'
-          - File Handling — Text: '01-software-development/4.8-file-handling-txt.md'
-          - File Handling — CSV: '01-software-development/4.9-file-handling-csv.md'
-          - Linear Search: '01-software-development/4.10-linear-search.md'
-          - Finding Minimum and Maximum: '01-software-development/4.11-finding-minimum-and-maximum.md'
-          - Count Occurrences: '01-software-development/4.12-count-occurrences.md'
+          - Sub-programs:
+            - Planning: '01-software-development/4.1-sub-programs.md'
+            - Creating and Calling: '01-software-development/4.2-parameter-passing.md'
+            - Scope of Variables: '01-software-development/4.3-scope-of-variables.md'
+            - Putting It All Together: '01-software-development/4.4-sub-programs-putting-it-all-together.md'
+          - Pre-defined Functions: '01-software-development/4.5-pre-defined-functions.md'
+          - Parallel 1D Arrays: '01-software-development/4.6-parallel-1d-arrays.md'
+          - Records:
+            - Records: '01-software-development/records/4.7-records.md'
+            - Arrays of Records: '01-software-development/records/4.8-arrays-of-records.md'
+            - Putting It All Together: '01-software-development/records/4.9-records-putting-it-all-together.md'
+          - File Handling:
+            - Text Files: '01-software-development/file-handling/4.10-file-handling-txt.md'
+            - CSV Files: '01-software-development/file-handling/4.11-file-handling-csv.md'
+            - Putting It All Together: '01-software-development/file-handling/4.12-file-handling-putting-it-all-together.md'
+          - Algorithms:
+            - Linear Search: '01-software-development/algorithms/4.13-linear-search.md'
+            - Finding Minimum and Maximum: '01-software-development/algorithms/4.14-finding-minimum-and-maximum.md'
+            - Count Occurrences: '01-software-development/algorithms/4.15-count-occurrences.md'
+            - Putting It All Together: '01-software-development/algorithms/4.16-algorithms-putting-it-all-together.md'
     - Computer Systems:
         - Data Representation:
           - Storing Negative Numbers: 
