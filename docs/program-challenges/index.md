@@ -50,7 +50,7 @@ For each challenge, create a Python file with the same name as the challenge. Fo
 - [Pin Checker](level-4/Pin%20Checker.md)
 - [6th Form Admissions](level-4/6th%20Form%20Admissions.md)
 - [Free Electricity!](level-4/Free%20Electricity!.md)
-- [How Many Cars?](level-4/How%20Many%20Cars%3F.md)
+- [How Many Cars](level-4/How%20Many%20Cars.md)
 
 ## Level 5
 

@@ -19,10 +19,10 @@ nav:
           - Design Tasks: '01-software-development/3.1.5-design-modules-data-flow-tasks.md'
         - Implementation:
           - Overview: '01-software-development/4.0-implementation-overview.md'
-          - Sub-programs — Explanation: '01-software-development/4.1-sub-programs.md'
-          - Sub-programs — Tasks: '01-software-development/4.1.1-sub-programs-tasks.md'
-          - Parameter Passing: '01-software-development/4.2-parameter-passing.md'
+          - Planning with Sub-programs: '01-software-development/4.1-sub-programs.md'
+          - Creating and Calling Sub-programs: '01-software-development/4.2-parameter-passing.md'
           - Scope of Variables: '01-software-development/4.3-scope-of-variables.md'
+          - Sub-programs — Tasks: '01-software-development/4.1.1-sub-programs-tasks.md'
           - Pre-defined Functions: '01-software-development/4.4-pre-defined-functions.md'
           - Parallel 1D Arrays: '01-software-development/4.5-parallel-1d-arrays.md'
           - Records: '01-software-development/4.6-records.md'
@@ -81,7 +81,7 @@ nav:
         - Pin Checker: 'program-challenges/level-4/Pin Checker.md'
         - 6th Form Admissions: 'program-challenges/level-4/6th Form Admissions.md'
         - Free Electricity!: 'program-challenges/level-4/Free Electricity!.md'
-        - How Many Cars?: 'program-challenges/level-4/How Many Cars?.md'
+        - How Many Cars?: 'program-challenges/level-4/How Many Cars.md'
       - 🔥🔥🔥🔥🔥:
         - Game Time - Total Time: 'program-challenges/level-5/Game Time - Total Time.md'
         - Inverse Image: 'program-challenges/level-5/Inverse Image.md'
@@ -100,8 +100,8 @@ markdown_extensions:
       - attr_list
       - md_in_html    
       - pymdownx.emoji:
-          emoji_index: !!python/name:material.extensions.emoji.twemoji
-          emoji_generator: !!python/name:material.extensions.emoji.to_svg
+          emoji_index: !!python/name:materialx.emoji.twemoji
+          emoji_generator: !!python/name:materialx.emoji.to_svg
       - pymdownx.superfences
       - pymdownx.tabbed:
           alternate_style: true
@@ -148,8 +148,3 @@ plugins:
   - glightbox
 
 copyright: Copyright &copy; 2025 Pixel&Wood Computer Science Tuition
-
-extra_css:
-  - Styles/extra.css
-
-    
