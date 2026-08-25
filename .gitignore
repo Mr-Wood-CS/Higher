@@ -5,3 +5,6 @@
 __pycache__/
 *.py[cod]
 
+# Separate Scratch lesson repository used for local editing
+Scratch-Programming/
+
