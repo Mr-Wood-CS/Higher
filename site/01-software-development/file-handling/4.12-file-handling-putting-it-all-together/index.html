@@ -1,7 +1,4 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -15,8 +12,11 @@
         <link rel="next" href="../../algorithms/4.13-linear-search/">
       
       
+        
+      
+      
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.2.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -24,52 +24,76 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.046329b4.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.85d0ee34.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
   
   
     
+      
+      
     
   
     
+      
+      
     
   
     
+      
+      
     
   
     
+      
+      
     
   
     
+      
+      
     
   
     
+      
+      
     
   
     
+      
+      
     
   
     
+      
+      
     
   
     
+      
+      
     
   
     
+      
+      
     
   
     
+      
+      
     
   
     
+      
+      
     
   
   
-  <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h224V368c0-26.5 21.5-48 48-48h112V96c0-35.3-28.7-64-64-64H64zm384 320H336c-8.8 0-16 7.2-16 16v112l32-32 64-64 32-32z"/></svg>');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M96 0C43 0 0 43 0 96v320c0 53 43 96 96 96h320c17.7 0 32-14.3 32-32s-14.3-32-32-32v-64c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H96zm0 384h256v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16h192c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48h192c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512zm-40-176h24v-64h-24c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24h-80c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M480 32c0-12.9-7.8-24.6-19.8-29.6S434.5.2 425.3 9.3L381.7 53c-48 48-113.1 75-181 75H64c-35.3 0-64 28.7-64 64v96c0 35.3 28.7 64 64 64v128c0 17.7 14.3 32 32 32h64c17.7 0 32-14.3 32-32V352h8.7c67.9 0 133 27 181 75l43.6 43.6c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6V300.4c18.6-8.8 32-32.5 32-60.4s-13.4-51.6-32-60.4V32zm-64 76.7v262.6C357.2 317.8 280.5 288 200.7 288H192v-96h8.7c79.8 0 156.5-29.8 215.3-83.3z"/></svg>');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512zm-86.2-346.7c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1 0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6-13.3 0-24-10.7-24-24v-13.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1 0-8.4-6.8-15.1-15.1-15.1h-58.3c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1-64 0z"/></svg>');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7.2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8.2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24v112c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0-64 0 32 32 0 1 0 64 0z"/></svg>');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.1 52.4 442.6 6.5c-1.9-3.9-6.1-6.5-10.5-6.5s-8.5 2.6-10.4 6.5l-16.5 45.9-46 16.8c-4.3 1.6-7.3 5.9-7.2 10.4 0 4.5 3 8.7 7.2 10.2l45.7 16.8 16.8 45.8c1.5 4.4 5.8 7.5 10.4 7.5s8.9-3.1 10.4-7.5l16.5-45.8 45.7-16.8c4.2-1.5 7.2-5.7 7.2-10.2 0-4.6-3-8.9-7.2-10.4l-45.6-16.8zm-132.4 53c-12.5-12.5-32.8-12.5-45.3 0l-2.9 2.9c-22-8-45.8-12.3-70.5-12.3C93.1 96 0 189.1 0 304s93.1 208 208 208 208-93.1 208-208c0-24.7-4.3-48.5-12.2-70.5l2.9-2.9c12.5-12.5 12.5-32.8 0-45.3l-80-80zM200 192c-57.4 0-104 46.6-104 104v8c0 8.8-7.2 16-16 16s-16-7.2-16-16v-8c0-75.1 60.9-136 136-136h8c8.8 0 16 7.2 16 16s-7.2 16-16 16h-8z"/></svg>');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 398.9c58.5-41.1 96-104.1 96-174.9C512 100.3 397.4 0 256 0S0 100.3 0 224c0 70.7 37.5 133.8 96 174.9V464c0 26.5 21.5 48 48 48h48v-48c0-8.8 7.2-16 16-16s16 7.2 16 16v48h64v-48c0-8.8 7.2-16 16-16s16 7.2 16 16v48h48c26.5 0 48-21.5 48-48v-65.1zM96 256a64 64 0 1 1 128 0 64 64 0 1 1-128 0zm256-64a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M320 0c17.7 0 32 14.3 32 32v64h120c39.8 0 72 32.2 72 72v272c0 39.8-32.2 72-72 72H168c-39.8 0-72-32.2-72-72V168c0-39.8 32.2-72 72-72h120V32c0-17.7 14.3-32 32-32zM208 384c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16h-32zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16h-32zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16h-32zM264 256a40 40 0 1 0-80 0 40 40 0 1 0 80 0zm152 40a40 40 0 1 0 0-80 40 40 0 1 0 0 80zM48 224h16v192H48c-26.5 0-48-21.5-48-48v-96c0-26.5 21.5-48 48-48zm544 0c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48h-16V224h16z"/></svg>');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M288 0H128c-17.7 0-32 14.3-32 32s14.3 32 32 32v132.8c0 11.8-3.3 23.5-9.5 33.5L10.3 406.2C3.6 417.2 0 429.7 0 442.6 0 480.9 31.1 512 69.4 512h309.2c38.3 0 69.4-31.1 69.4-69.4 0-12.8-3.6-25.4-10.3-36.4L329.5 230.4c-6.2-10.1-9.5-21.7-9.5-33.5V64c17.7 0 32-14.3 32-32S337.7 0 320 0h-32zm-96 196.8V64h64v132.8c0 23.7 6.6 46.9 19 67.1l34.5 56.1h-171l34.5-56.1c12.4-20.2 19-43.4 19-67.1z"/></svg>');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64h-64c-35.3 0-64-28.7-64-64V216z"/></svg>');}</style>
+  <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M64%20480c-35.3%200-64-28.7-64-64V96c0-35.3%2028.7-64%2064-64h320c35.3%200%2064%2028.7%2064%2064v213.5c0%2017-6.7%2033.3-18.7%2045.3L322.7%20461.3c-12%2012-28.3%2018.7-45.3%2018.7zm325.5-176H296c-13.3%200-24%2010.7-24%2024v93.5z%22/%3E%3C/svg%3E');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M384%20512H96c-53%200-96-43-96-96V96C0%2043%2043%200%2096%200h304c26.5%200%2048%2021.5%2048%2048v288c0%2020.9-13.4%2038.7-32%2045.3V448c17.7%200%2032%2014.3%2032%2032s-14.3%2032-32%2032zM96%20384c-17.7%200-32%2014.3-32%2032s14.3%2032%2032%2032h256v-64zm32-232c0%2013.3%2010.7%2024%2024%2024h176c13.3%200%2024-10.7%2024-24s-10.7-24-24-24H152c-13.3%200-24%2010.7-24%2024m24%2072c-13.3%200-24%2010.7-24%2024s10.7%2024%2024%2024h176c13.3%200%2024-10.7%2024-24s-10.7-24-24-24z%22/%3E%3C/svg%3E');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M256%20512a256%20256%200%201%200%200-512%20256%20256%200%201%200%200%20512m-32-352a32%2032%200%201%201%2064%200%2032%2032%200%201%201-64%200m-8%2064h48c13.3%200%2024%2010.7%2024%2024v88h8c13.3%200%2024%2010.7%2024%2024s-10.7%2024-24%2024h-80c-13.3%200-24-10.7-24-24s10.7-24%2024-24h24v-64h-24c-13.3%200-24-10.7-24-24s10.7-24%2024-24%22/%3E%3C/svg%3E');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M461.2%2018.9C472.7%2024%20480%2035.4%20480%2048v416c0%2012.6-7.3%2024-18.8%2029.1s-24.8%203.2-34.3-5.1l-46.6-40.7c-43.6-38.1-98.7-60.3-156.4-63V480c0%2017.7-14.3%2032-32%2032h-32c-17.7%200-32-14.3-32-32v-96C57.3%20384%200%20326.7%200%20256s57.3-128%20128-128h84.5c61.8-.2%20121.4-22.7%20167.9-63.3L427%2024c9.4-8.3%2022.9-10.2%2034.3-5.1zM224%20320v.2c70.3%202.7%20137.8%2028.5%20192%2073.4V118.3c-54.2%2044.9-121.7%2070.7-192%2073.4z%22/%3E%3C/svg%3E');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M434.8%2070.1c14.3%2010.4%2017.5%2030.4%207.1%2044.7l-256%20352c-5.5%207.6-14%2012.3-23.4%2013.1s-18.5-2.7-25.1-9.3l-128-128c-12.5-12.5-12.5-32.8%200-45.3s32.8-12.5%2045.3%200l101.5%20101.5%20234-321.7c10.4-14.3%2030.4-17.5%2044.7-7.1z%22/%3E%3C/svg%3E');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M256%20512a256%20256%200%201%200%200-512%20256%20256%200%201%200%200%20512m0-336c-17.7%200-32%2014.3-32%2032%200%2013.3-10.7%2024-24%2024s-24-10.7-24-24c0-44.2%2035.8-80%2080-80s80%2035.8%2080%2080c0%2047.2-36%2067.2-56%2074.5v3.8c0%2013.3-10.7%2024-24%2024s-24-10.7-24-24v-8.1c0-20.5%2014.8-35.2%2030.1-40.2%206.4-2.1%2013.2-5.5%2018.2-10.3%204.3-4.2%207.7-10%207.7-19.6%200-17.7-14.3-32-32-32zm-32%20192a32%2032%200%201%201%2064%200%2032%2032%200%201%201-64%200%22/%3E%3C/svg%3E');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M256%200c14.7%200%2028.2%208.1%2035.2%2021l216%20400c6.7%2012.4%206.4%2027.4-.8%2039.5S486.1%20480%20472%20480H40c-14.1%200-27.2-7.4-34.4-19.5s-7.5-27.1-.8-39.5l216-400c7-12.9%2020.5-21%2035.2-21m0%20352a32%2032%200%201%200%200%2064%2032%2032%200%201%200%200-64m0-192c-18.2%200-32.7%2015.5-31.4%2033.7l7.4%20104c.9%2012.5%2011.4%2022.3%2023.9%2022.3%2012.6%200%2023-9.7%2023.9-22.3l7.4-104c1.3-18.2-13.1-33.7-31.4-33.7z%22/%3E%3C/svg%3E');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20576%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M480-16c6.9%200%2013%204.4%2015.2%2010.9l13.5%2040.4%2040.4%2013.5C555.6%2051%20560%2057.1%20560%2064s-4.4%2013-10.9%2015.2l-40.4%2013.5-13.5%2040.4c-2.2%206.5-8.3%2010.9-15.2%2010.9s-13-4.4-15.2-10.9l-13.5-40.4-40.4-13.5C404.4%2077%20400%2070.9%20400%2064s4.4-13%2010.9-15.2l40.4-13.5%2013.5-40.4C467-11.6%20473.1-16%20480-16M321.4%2097.4c12.5-12.5%2032.8-12.5%2045.3%200l80%2080c12.5%2012.5%2012.5%2032.8%200%2045.3l-10.9%2010.9c7.9%2022%2012.2%2045.7%2012.2%2070.5%200%20114.9-93.1%20208-208%20208S32%20418.9%2032%20304%20125.1%2096%20240%2096c24.7%200%2048.5%204.3%2070.5%2012.3zM144%20304c0-53%2043-96%2096-96%2013.3%200%2024-10.7%2024-24s-10.7-24-24-24c-79.5%200-144%2064.5-144%20144%200%2013.3%2010.7%2024%2024%2024s24-10.7%2024-24%22/%3E%3C/svg%3E');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M416%20427.4c58.5-44%2096-111.6%2096-187.4C512%20107.5%20397.4%200%20256%200S0%20107.5%200%20240c0%2075.8%2037.5%20143.4%2096%20187.4V464c0%2026.5%2021.5%2048%2048%2048h32v-40c0-13.3%2010.7-24%2024-24s24%2010.7%2024%2024v40h64v-40c0-13.3%2010.7-24%2024-24s24%2010.7%2024%2024v40h32c26.5%200%2048-21.5%2048-48zM96%20256a64%2064%200%201%201%20128%200%2064%2064%200%201%201-128%200m256-64a64%2064%200%201%201%200%20128%2064%2064%200%201%201%200-128%22/%3E%3C/svg%3E');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20640%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M352%200c0-17.7-14.3-32-32-32s-32%2014.3-32%2032v64h-96c-53%200-96%2043-96%2096v224c0%2053%2043%2096%2096%2096h256c53%200%2096-43%2096-96V160c0-53-43-96-96-96h-96zM160%20368c0-13.3%2010.7-24%2024-24h32c13.3%200%2024%2010.7%2024%2024s-10.7%2024-24%2024h-32c-13.3%200-24-10.7-24-24m120%200c0-13.3%2010.7-24%2024-24h32c13.3%200%2024%2010.7%2024%2024s-10.7%2024-24%2024h-32c-13.3%200-24-10.7-24-24m120%200c0-13.3%2010.7-24%2024-24h32c13.3%200%2024%2010.7%2024%2024s-10.7%2024-24%2024h-32c-13.3%200-24-10.7-24-24M224%20176a48%2048%200%201%201%200%2096%2048%2048%200%201%201%200-96m144%2048a48%2048%200%201%201%2096%200%2048%2048%200%201%201-96%200m-304%200c0-17.7-14.3-32-32-32S0%20206.3%200%20224v96c0%2017.7%2014.3%2032%2032%2032s32-14.3%2032-32zm544-32c-17.7%200-32%2014.3-32%2032v96c0%2017.7%2014.3%2032%2032%2032s32-14.3%2032-32v-96c0-17.7-14.3-32-32-32%22/%3E%3C/svg%3E');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M288%200H128c-17.7%200-32%2014.3-32%2032s14.3%2032%2032%2032v151.5L7.5%20426.3C2.6%20435%200%20444.7%200%20454.7%200%20486.4%2025.6%20512%2057.3%20512h333.4c31.6%200%2057.3-25.6%2057.3-57.3%200-10-2.6-19.8-7.5-28.4L320%20215.5V64c17.7%200%2032-14.3%2032-32S337.7%200%20320%200zm-96%20215.5V64h64v151.5c0%2011.1%202.9%2022.1%208.4%2031.8L306%20320H142l41.6-72.7c5.5-9.7%208.4-20.6%208.4-31.8%22/%3E%3C/svg%3E');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M0%20216C0%20149.7%2053.7%2096%20120%2096h8c17.7%200%2032%2014.3%2032%2032s-14.3%2032-32%2032h-8c-30.9%200-56%2025.1-56%2056v8h64c35.3%200%2064%2028.7%2064%2064v64c0%2035.3-28.7%2064-64%2064H64c-35.3%200-64-28.7-64-64zm256%200c0-66.3%2053.7-120%20120-120h8c17.7%200%2032%2014.3%2032%2032s-14.3%2032-32%2032h-8c-30.9%200-56%2025.1-56%2056v8h64c35.3%200%2064%2028.7%2064%2064v64c0%2035.3-28.7%2064-64%2064h-64c-35.3%200-64-28.7-64-64z%22/%3E%3C/svg%3E');}</style>
 
 
 
@@ -81,29 +105,29 @@
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Quicksand";--md-code-font:"Roboto Mono"}</style>
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
-    
-   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
-    html.glightbox-open { overflow: initial; height: 100%; }
-    .gslide-title { margin-top: 0px; user-select: text; }
-    .gslide-desc { color: #666; user-select: text; }
-    .gslide-image img { background: white; }
-    .gscrollbar-fixer { padding-right: 15px; }
-    .gdesc-inner { font-size: 0.75rem; }
-    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
-    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     
@@ -113,7 +137,6 @@
     
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="deep-orange">
   
-    
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -140,12 +163,12 @@
     <a href="../../.." title="Higher Computer Science" class="md-header__button md-logo" aria-label="Higher Computer Science" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -169,6 +192,7 @@
     
     
     
+    
   </nav>
   
     
@@ -181,9 +205,11 @@
   
   
   
+  
     <li class="md-tabs__item">
       <a href="../../.." class="md-tabs__link">
         
+  
   
     
   
@@ -197,12 +223,14 @@
         
   
   
+  
     
   
   
     
     
       
+  
   
   
     
@@ -213,6 +241,7 @@
       <li class="md-tabs__item md-tabs__item--active">
         <a href="../../1.1-development-methodologies/" class="md-tabs__link">
           
+  
   
     
   
@@ -231,15 +260,18 @@
   
   
   
-    
-    
-      
-  
-  
   
     
     
       
+  
+  
+  
+  
+    
+    
+      
+  
   
   
   
@@ -248,6 +280,7 @@
       <li class="md-tabs__item">
         <a href="../../../02-computer-systems/2.1-twos-compliment/" class="md-tabs__link">
           
+  
   
     
   
@@ -269,11 +302,13 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
         <a href="../../../program-challenges/" class="md-tabs__link">
           
+  
   
     
   
@@ -302,7 +337,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -316,16 +351,17 @@
     <a href="../../.." title="Higher Computer Science" class="md-nav__button md-logo" aria-label="Higher Computer Science" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     Higher Computer Science
   </label>
   
-  <ul class="md-nav__list" data-md-scrollfix>
+  <ul class="md-nav__list" data-md-scrollfix="">
     
       
       
+  
   
   
   
@@ -333,9 +369,16 @@
       <a href="../../.." class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Home
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -350,6 +393,7 @@
     
   
   
+  
     
     
       
@@ -363,20 +407,34 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
       
         
         
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked="">
         
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Software Design and Development
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -385,15 +443,20 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Software Design and Development
+            
+  
+    Software Design and Development
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
   
   
   
+  
     
     
       
@@ -402,6 +465,11 @@
         
       
         
+      
+    
+    
+    
+      
       
     
     
@@ -409,16 +477,22 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1">
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
-        
+          
           <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Development Methodologies
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -427,12 +501,17 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
-            Development Methodologies
+            
+  
+    Development Methodologies
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
+  
   
   
   
@@ -440,9 +519,16 @@
       <a href="../../1.1-development-methodologies/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Explanation
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -453,6 +539,7 @@
             
               
                 
+  
   
   
   
@@ -460,9 +547,16 @@
       <a href="../../1.2-agile-methodologies/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Agile Methodologies
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -476,13 +570,21 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../1.3-the-iterative-development-Process/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Iterative Methodologies
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -504,12 +606,18 @@
   
   
   
+  
     
     
       
         
       
         
+      
+    
+    
+    
+      
       
     
     
@@ -517,16 +625,22 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2">
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
-        
+          
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Analysis
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -535,12 +649,17 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
-            Analysis
+            
+  
+    Analysis
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
+  
   
   
   
@@ -548,9 +667,16 @@
       <a href="../../2.1-analysis/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Explanation
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -564,13 +690,21 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../2.1.1-analysis-tasks/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Analysis Tasks
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -592,6 +726,7 @@
   
   
   
+  
     
     
       
@@ -606,6 +741,11 @@
         
       
         
+      
+    
+    
+    
+      
       
     
     
@@ -613,16 +753,22 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3">
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
-        
+          
           <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Design
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -631,12 +777,17 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
-            Design
+            
+  
+    Design
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
+  
   
   
   
@@ -644,9 +795,16 @@
       <a href="../../3.1-design/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Explanation
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -657,6 +815,7 @@
             
               
                 
+  
   
   
   
@@ -664,9 +823,16 @@
       <a href="../../3.1.3-data-flow-in-out/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Data Flow In and Out
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -677,6 +843,7 @@
             
               
                 
+  
   
   
   
@@ -684,9 +851,16 @@
       <a href="../../3.1.1-structure-diagrams/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Structure Diagrams
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -697,6 +871,7 @@
             
               
                 
+  
   
   
   
@@ -704,9 +879,16 @@
       <a href="../../3.1.2-pseudocodeV1/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Pseudocode
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -717,6 +899,7 @@
             
               
                 
+  
   
   
   
@@ -724,9 +907,16 @@
       <a href="../../3.1.4-wireframes/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Wireframes
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -740,13 +930,21 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../3.1.5-design-modules-data-flow-tasks/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Design Tasks
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -770,6 +968,7 @@
     
   
   
+  
     
     
       
@@ -786,6 +985,11 @@
         
       
         
+      
+    
+    
+    
+      
       
     
     
@@ -793,16 +997,22 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked="">
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
-        
+          
           <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Implementation
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -811,12 +1021,17 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_4">
             <span class="md-nav__icon md-icon"></span>
-            Implementation
+            
+  
+    Implementation
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
+  
   
   
   
@@ -824,9 +1039,16 @@
       <a href="../../4.0-implementation-overview/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Overview
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -840,6 +1062,7 @@
   
   
   
+  
     
     
       
@@ -850,6 +1073,11 @@
         
       
         
+      
+    
+    
+    
+      
       
     
     
@@ -857,16 +1085,22 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2">
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2" >
-        
+          
           <label class="md-nav__link" for="__nav_2_4_2" id="__nav_2_4_2_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Sub-programs
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -875,12 +1109,17 @@
         <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_4_2">
             <span class="md-nav__icon md-icon"></span>
-            Sub-programs
+            
+  
+    Sub-programs
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
+  
   
   
   
@@ -888,9 +1127,16 @@
       <a href="../../4.1-sub-programs/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Planning
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -901,6 +1147,7 @@
             
               
                 
+  
   
   
   
@@ -908,9 +1155,16 @@
       <a href="../../4.2-parameter-passing/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Creating and Calling
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -921,6 +1175,7 @@
             
               
                 
+  
   
   
   
@@ -928,9 +1183,16 @@
       <a href="../../4.3-scope-of-variables/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Scope of Variables
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -944,13 +1206,21 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../4.4-sub-programs-putting-it-all-together/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Putting It All Together
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -972,13 +1242,21 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../4.5-pre-defined-functions/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Pre-defined Functions
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -989,6 +1267,7 @@
             
               
                 
+  
   
   
   
@@ -996,9 +1275,16 @@
       <a href="../../4.6-parallel-1d-arrays/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Parallel 1D Arrays
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1012,6 +1298,7 @@
   
   
   
+  
     
     
       
@@ -1020,6 +1307,11 @@
         
       
         
+      
+    
+    
+    
+      
       
     
     
@@ -1027,16 +1319,22 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_5">
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_5" >
-        
+          
           <label class="md-nav__link" for="__nav_2_4_5" id="__nav_2_4_5_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Records
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1045,12 +1343,17 @@
         <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_4_5">
             <span class="md-nav__icon md-icon"></span>
-            Records
+            
+  
+    Records
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
+  
   
   
   
@@ -1058,9 +1361,16 @@
       <a href="../../records/4.7-records/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Records
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1071,6 +1381,7 @@
             
               
                 
+  
   
   
   
@@ -1078,9 +1389,16 @@
       <a href="../../records/4.8-arrays-of-records/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Arrays of Records
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1094,13 +1412,21 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../records/4.9-records-putting-it-all-together/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Putting It All Together
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1124,6 +1450,7 @@
     
   
   
+  
     
     
       
@@ -1132,6 +1459,11 @@
         
       
         
+      
+    
+    
+    
+      
       
     
     
@@ -1139,16 +1471,22 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_6" checked="">
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_6" checked>
-        
+          
           <label class="md-nav__link" for="__nav_2_4_6" id="__nav_2_4_6_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     File Handling
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1157,12 +1495,17 @@
         <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_4_6">
             <span class="md-nav__icon md-icon"></span>
-            File Handling
+            
+  
+    File Handling
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
+  
   
   
   
@@ -1170,9 +1513,16 @@
       <a href="../4.10-file-handling-txt/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Text Files
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1186,13 +1536,21 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../4.11-file-handling-csv/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     CSV Files
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1206,6 +1564,7 @@
   
   
     
+  
   
   
     <li class="md-nav__item md-nav__item--active">
@@ -1219,9 +1578,16 @@
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
+  
   <span class="md-ellipsis">
+    
+  
     Putting It All Together
+  
+
+    
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -1230,9 +1596,16 @@
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Putting It All Together
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1250,11 +1623,15 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#task-competition-scores" class="md-nav__link">
-    Task: Competition Scores
+    <span class="md-ellipsis">
+      
+        Task: Competition Scores
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Task: Competition Scores">
@@ -1262,14 +1639,22 @@
         
           <li class="md-nav__item">
   <a href="#extension-1-write-a-result" class="md-nav__link">
-    Extension 1: Write a Result
+    <span class="md-ellipsis">
+      
+        Extension 1: Write a Result
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#extension-2-use-csv" class="md-nav__link">
-    Extension 2: Use CSV
+    <span class="md-ellipsis">
+      
+        Extension 2: Use CSV
+      
+    </span>
   </a>
   
 </li>
@@ -1301,6 +1686,7 @@
   
   
   
+  
     
     
       
@@ -1311,6 +1697,11 @@
         
       
         
+      
+    
+    
+    
+      
       
     
     
@@ -1318,16 +1709,22 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_7">
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_7" >
-        
+          
           <label class="md-nav__link" for="__nav_2_4_7" id="__nav_2_4_7_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Algorithms
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1336,12 +1733,17 @@
         <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_4_7">
             <span class="md-nav__icon md-icon"></span>
-            Algorithms
+            
+  
+    Algorithms
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
+  
   
   
   
@@ -1349,9 +1751,16 @@
       <a href="../../algorithms/4.13-linear-search/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Linear Search
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1362,6 +1771,7 @@
             
               
                 
+  
   
   
   
@@ -1369,9 +1779,16 @@
       <a href="../../algorithms/4.14-finding-minimum-and-maximum/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Finding Minimum and Maximum
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1382,6 +1799,7 @@
             
               
                 
+  
   
   
   
@@ -1389,9 +1807,16 @@
       <a href="../../algorithms/4.15-count-occurrences/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Count Occurrences
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1405,13 +1830,21 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../algorithms/4.16-algorithms-putting-it-all-together/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Putting It All Together
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1448,10 +1881,16 @@
   
   
   
+  
     
     
       
         
+      
+    
+    
+    
+      
       
     
     
@@ -1459,16 +1898,22 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
+          
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Computer Systems
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1477,21 +1922,31 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Computer Systems
+            
+  
+    Computer Systems
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
   
   
   
+  
     
     
       
         
       
         
+      
+    
+    
+    
+      
       
     
     
@@ -1499,16 +1954,22 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1">
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
-        
+          
           <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Data Representation
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1517,21 +1978,31 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_1">
             <span class="md-nav__icon md-icon"></span>
-            Data Representation
+            
+  
+    Data Representation
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
   
   
   
+  
     
     
       
         
       
         
+      
+    
+    
+    
+      
       
     
     
@@ -1539,16 +2010,22 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_1">
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_1" >
-        
+          
           <label class="md-nav__link" for="__nav_3_1_1" id="__nav_3_1_1_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Storing Negative Numbers
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1557,12 +2034,17 @@
         <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_1_1">
             <span class="md-nav__icon md-icon"></span>
-            Storing Negative Numbers
+            
+  
+    Storing Negative Numbers
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
+  
   
   
   
@@ -1570,9 +2052,16 @@
       <a href="../../../02-computer-systems/2.1-twos-compliment/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Two's Compliment
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1586,13 +2075,21 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../02-computer-systems/2.1.1-twos-compliment-tasks/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Tasks
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1614,12 +2111,18 @@
   
   
   
+  
     
     
       
         
       
         
+      
+    
+    
+    
+      
       
     
     
@@ -1627,16 +2130,22 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_2">
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_2" >
-        
+          
           <label class="md-nav__link" for="__nav_3_1_2" id="__nav_3_1_2_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Floating-Point Representation
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1645,12 +2154,17 @@
         <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_1_2">
             <span class="md-nav__icon md-icon"></span>
-            Floating-Point Representation
+            
+  
+    Floating-Point Representation
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
+  
   
   
   
@@ -1658,9 +2172,16 @@
       <a href="../../../02-computer-systems/2.2-Floating-Point-Representation/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Explanation
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1674,13 +2195,21 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../02-computer-systems/2.2.1-floating-point-representation-tasks/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Tasks
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1717,6 +2246,7 @@
   
   
   
+  
     
     
       
@@ -1733,6 +2263,11 @@
         
       
         
+      
+    
+    
+    
+      
       
     
     
@@ -1740,24 +2275,29 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4">
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
-        
-          
           
           <div class="md-nav__link md-nav__container">
             <a href="../../../program-challenges/" class="md-nav__link ">
               
   
+  
   <span class="md-ellipsis">
+    
+  
     Program Challenges
+  
+
+    
   </span>
+  
   
 
             </a>
             
-              <label class="md-nav__link " for="__nav_4">
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -1766,9 +2306,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Program Challenges
+            
+  
+    Program Challenges
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
             
@@ -1777,6 +2321,7 @@
   
   
   
+  
     
     
       
@@ -1789,6 +2334,11 @@
         
       
         
+      
+    
+    
+    
+      
       
     
     
@@ -1796,16 +2346,22 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2">
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
-        
+          
           <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     🔥
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1814,12 +2370,17 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_2">
             <span class="md-nav__icon md-icon"></span>
-            🔥
+            
+  
+    🔥
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
+  
   
   
   
@@ -1827,9 +2388,16 @@
       <a href="../../../program-challenges/level-1/Name%20Change/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Name Change
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1840,6 +2408,7 @@
             
               
                 
+  
   
   
   
@@ -1847,9 +2416,16 @@
       <a href="../../../program-challenges/level-1/Area%20Calc/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Area Calc
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1860,6 +2436,7 @@
             
               
                 
+  
   
   
   
@@ -1867,9 +2444,16 @@
       <a href="../../../program-challenges/level-1/Largest%20Number/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Largest Number
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1880,6 +2464,7 @@
             
               
                 
+  
   
   
   
@@ -1887,9 +2472,16 @@
       <a href="../../../program-challenges/level-1/Number%20Changer/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Number Changer
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1903,13 +2495,21 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../program-challenges/level-1/Jim%27s%20Bonus%20Scheme/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Jim's Bonus Scheme
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1931,6 +2531,7 @@
   
   
   
+  
     
     
       
@@ -1955,6 +2556,11 @@
         
       
         
+      
+    
+    
+    
+      
       
     
     
@@ -1962,16 +2568,22 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3">
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
-        
+          
           <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     🔥🔥
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1980,12 +2592,17 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_3">
             <span class="md-nav__icon md-icon"></span>
-            🔥🔥
+            
+  
+    🔥🔥
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
+  
   
   
   
@@ -1993,9 +2610,16 @@
       <a href="../../../program-challenges/level-2/Bigger%20and%20Bigger/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Bigger and Bigger
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2006,6 +2630,7 @@
             
               
                 
+  
   
   
   
@@ -2013,9 +2638,16 @@
       <a href="../../../program-challenges/level-2/Form%20Chooser/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Form Chooser
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2026,6 +2658,7 @@
             
               
                 
+  
   
   
   
@@ -2033,9 +2666,16 @@
       <a href="../../../program-challenges/level-2/Taxi%20Fare/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Taxi Fare
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2046,6 +2686,7 @@
             
               
                 
+  
   
   
   
@@ -2053,9 +2694,16 @@
       <a href="../../../program-challenges/level-2/Password%20Check/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Password Check
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2066,6 +2714,7 @@
             
               
                 
+  
   
   
   
@@ -2073,9 +2722,16 @@
       <a href="../../../program-challenges/level-2/Secret%20Agent/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Secret Agent
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2086,6 +2742,7 @@
             
               
                 
+  
   
   
   
@@ -2093,9 +2750,16 @@
       <a href="../../../program-challenges/level-2/New%20Email/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     New Email
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2106,6 +2770,7 @@
             
               
                 
+  
   
   
   
@@ -2113,9 +2778,16 @@
       <a href="../../../program-challenges/level-2/Bonus%20Payment/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Bonus Payment
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2126,6 +2798,7 @@
             
               
                 
+  
   
   
   
@@ -2133,9 +2806,16 @@
       <a href="../../../program-challenges/level-2/BMI%20Checker/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     BMI Checker
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2146,6 +2826,7 @@
             
               
                 
+  
   
   
   
@@ -2153,9 +2834,16 @@
       <a href="../../../program-challenges/level-2/Magic%208%20Ball/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Magic 8 Ball
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2166,6 +2854,7 @@
             
               
                 
+  
   
   
   
@@ -2173,9 +2862,16 @@
       <a href="../../../program-challenges/level-2/km%20to%20Miles/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     km to Miles
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2189,13 +2885,21 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../program-challenges/level-2/Random%20Number%20Generator/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Random Number Generator
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2217,6 +2921,7 @@
   
   
   
+  
     
     
       
@@ -2239,6 +2944,11 @@
         
       
         
+      
+    
+    
+    
+      
       
     
     
@@ -2246,16 +2956,22 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4">
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
-        
+          
           <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     🔥🔥🔥
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -2264,12 +2980,17 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_4">
             <span class="md-nav__icon md-icon"></span>
-            🔥🔥🔥
+            
+  
+    🔥🔥🔥
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
+  
   
   
   
@@ -2277,9 +2998,16 @@
       <a href="../../../program-challenges/level-3/Ice%20Cream%21/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Ice Cream!
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2290,6 +3018,7 @@
             
               
                 
+  
   
   
   
@@ -2297,9 +3026,16 @@
       <a href="../../../program-challenges/level-3/Cake%20Maker/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Cake Maker
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2310,6 +3046,7 @@
             
               
                 
+  
   
   
   
@@ -2317,9 +3054,16 @@
       <a href="../../../program-challenges/level-3/Five%20A%20Day/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Five A Day
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2330,6 +3074,7 @@
             
               
                 
+  
   
   
   
@@ -2337,9 +3082,16 @@
       <a href="../../../program-challenges/level-3/Squares%20and%20Cubes/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Squares and Cubes
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2350,6 +3102,7 @@
             
               
                 
+  
   
   
   
@@ -2357,9 +3110,16 @@
       <a href="../../../program-challenges/level-3/Lower%20Case/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Lower Case
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2370,6 +3130,7 @@
             
               
                 
+  
   
   
   
@@ -2377,9 +3138,16 @@
       <a href="../../../program-challenges/level-3/Go%20Kart/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Go Kart
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2390,6 +3158,7 @@
             
               
                 
+  
   
   
   
@@ -2397,9 +3166,16 @@
       <a href="../../../program-challenges/level-3/Pick%20A%20Card/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Pick A Card
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2410,6 +3186,7 @@
             
               
                 
+  
   
   
   
@@ -2417,9 +3194,16 @@
       <a href="../../../program-challenges/level-3/Darts/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Darts
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2430,6 +3214,7 @@
             
               
                 
+  
   
   
   
@@ -2437,9 +3222,16 @@
       <a href="../../../program-challenges/level-3/Averages/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Averages
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2453,13 +3245,21 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../program-challenges/level-3/Times%20Tables/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Times Tables
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2481,6 +3281,7 @@
   
   
   
+  
     
     
       
@@ -2503,6 +3304,11 @@
         
       
         
+      
+    
+    
+    
+      
       
     
     
@@ -2510,16 +3316,22 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5">
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
-        
+          
           <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     🔥🔥🔥🔥
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -2528,12 +3340,17 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_5">
             <span class="md-nav__icon md-icon"></span>
-            🔥🔥🔥🔥
+            
+  
+    🔥🔥🔥🔥
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
+  
   
   
   
@@ -2541,9 +3358,16 @@
       <a href="../../../program-challenges/level-4/Bingo%21/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Bingo!
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2554,6 +3378,7 @@
             
               
                 
+  
   
   
   
@@ -2561,9 +3386,16 @@
       <a href="../../../program-challenges/level-4/OCR%20Tech/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     OCR Tech
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2574,6 +3406,7 @@
             
               
                 
+  
   
   
   
@@ -2581,9 +3414,16 @@
       <a href="../../../program-challenges/level-4/OCR%20FC%20-%20Goals%20Array/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     OCR FC - Goals Array
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2594,6 +3434,7 @@
             
               
                 
+  
   
   
   
@@ -2601,9 +3442,16 @@
       <a href="../../../program-challenges/level-4/Game%20Time%20-%20Day%20Of%20The%20Week/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Game Time - Day Of The Week
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2614,6 +3462,7 @@
             
               
                 
+  
   
   
   
@@ -2621,9 +3470,16 @@
       <a href="../../../program-challenges/level-4/Logging%20In/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Logging In
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2634,6 +3490,7 @@
             
               
                 
+  
   
   
   
@@ -2641,9 +3498,16 @@
       <a href="../../../program-challenges/level-4/Email%20Validator/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Email Validator
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2654,6 +3518,7 @@
             
               
                 
+  
   
   
   
@@ -2661,9 +3526,16 @@
       <a href="../../../program-challenges/level-4/Pin%20Checker/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Pin Checker
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2674,6 +3546,7 @@
             
               
                 
+  
   
   
   
@@ -2681,9 +3554,16 @@
       <a href="../../../program-challenges/level-4/6th%20Form%20Admissions/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     6th Form Admissions
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2694,6 +3574,7 @@
             
               
                 
+  
   
   
   
@@ -2701,9 +3582,16 @@
       <a href="../../../program-challenges/level-4/Free%20Electricity%21/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Free Electricity!
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2717,13 +3605,21 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../program-challenges/level-4/How%20Many%20Cars/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     How Many Cars?
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2745,6 +3641,7 @@
   
   
   
+  
     
     
       
@@ -2753,6 +3650,11 @@
         
       
         
+      
+    
+    
+    
+      
       
     
     
@@ -2760,16 +3662,22 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6">
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" >
-        
+          
           <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     🔥🔥🔥🔥🔥
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -2778,12 +3686,17 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_6">
             <span class="md-nav__icon md-icon"></span>
-            🔥🔥🔥🔥🔥
+            
+  
+    🔥🔥🔥🔥🔥
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
+  
   
   
   
@@ -2791,9 +3704,16 @@
       <a href="../../../program-challenges/level-5/Game%20Time%20-%20Total%20Time/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Game Time - Total Time
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2804,6 +3724,7 @@
             
               
                 
+  
   
   
   
@@ -2811,9 +3732,16 @@
       <a href="../../../program-challenges/level-5/Inverse%20Image/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Inverse Image
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2827,13 +3755,21 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../program-challenges/level-5/Battleships/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Battleships
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2865,7 +3801,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -2881,11 +3817,15 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#task-competition-scores" class="md-nav__link">
-    Task: Competition Scores
+    <span class="md-ellipsis">
+      
+        Task: Competition Scores
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Task: Competition Scores">
@@ -2893,14 +3833,22 @@
         
           <li class="md-nav__item">
   <a href="#extension-1-write-a-result" class="md-nav__link">
-    Extension 1: Write a Result
+    <span class="md-ellipsis">
+      
+        Extension 1: Write a Result
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#extension-2-use-csv" class="md-nav__link">
-    Extension 2: Use CSV
+    <span class="md-ellipsis">
+      
+        Extension 2: Use CSV
+      
+    </span>
   </a>
   
 </li>
@@ -2920,9 +3868,103 @@
           
           
             <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation">
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../../1.1-development-methodologies/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Software Design and Development
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../../4.0-implementation-overview/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Implementation
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../4.10-file-handling-txt/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    File Handling
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
               <article class="md-content__inner md-typeset">
                 
                   
+
 
 
 <h1 id="file-handling-putting-it-all-together">File Handling: Putting It All Together</h1>
@@ -2957,18 +3999,26 @@ the name and score of the winning player.</p>
 
 
 
+
+
+
+
+
+
+
                 
               </article>
             </div>
           
           
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
-          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
-            
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
-            Back to top
-          </button>
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden="">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
         
       </main>
       
@@ -2979,7 +4029,7 @@ the name and score of the winning player.</p>
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2025 Pixel&Wood Computer Science Tuition
+      Copyright © 2025 Pixel&amp;Wood Computer Science Tuition
     </div>
   
   
@@ -2999,13 +4049,17 @@ the name and score of the winning player.</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "content.code.annotate", "navigation.tabs.sticky", "navigation.top", "navigation.indexes", "navigation.path", "navigation.tabs"], "search": "../../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.copy", "content.code.annotate", "navigation.tabs.sticky", "navigation.top", "navigation.indexes", "navigation.path", "navigation.tabs"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
-  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
-document$.subscribe(() => { lightbox.reload() });
-</script></body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
