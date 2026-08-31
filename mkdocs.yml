@@ -47,6 +47,16 @@ nav:
           - Floating-Point Representation:
             - Explanation: '02-computer-systems/2.2-Floating-Point-Representation.md'
             - Tasks: '02-computer-systems/2.2.1-floating-point-representation-tasks.md'
+        - Computer Architecture:
+          - Components and Buses:
+            - Explanation: '02-computer-systems/computer-architecture/3.1-computer-architecture.md'
+            - Tasks: '02-computer-systems/computer-architecture/3.1.1-computer-architecture-tasks.md'
+          - Fetch–Execute Cycle:
+            - Explanation: '02-computer-systems/computer-architecture/3.2-fetch-execute-cycle.md'
+            - Tasks: '02-computer-systems/computer-architecture/3.2.1-fetch-execute-cycle-tasks.md'
+          - System Performance:
+            - Explanation: '02-computer-systems/computer-architecture/3.3-system-performance.md'
+            - Tasks: '02-computer-systems/computer-architecture/3.3.1-system-performance-tasks.md'
     - Program Challenges:
       - Overview: 'program-challenges/index.md'
       - 🔥:
