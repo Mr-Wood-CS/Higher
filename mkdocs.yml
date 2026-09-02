@@ -157,6 +157,7 @@ theme:
   features:
     - content.code.copy
     - content.code.annotate
+    - content.tabs.link
     - navigation.tabs.sticky
     - navigation.top
     - navigation.indexes 
