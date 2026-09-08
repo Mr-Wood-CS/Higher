@@ -30,7 +30,7 @@ nav:
           - Parallel 1D Arrays:
             - Explanation: '01-software-development/04-software-implementation/4.3-parallel-arrays/4.3.1-parallel-1d-arrays.md'
             - Tasks: '01-software-development/04-software-implementation/4.3-parallel-arrays/4.3.2-parallel-arrays-putting-it-all-together.md'
-            - Answers and Programs: '01-software-development/04-software-implementation/4.3-parallel-arrays/4.3.3-parallel-arrays-answers.md'
+            #- Answers and Programs: '01-software-development/04-software-implementation/4.3-parallel-arrays/4.3.3-parallel-arrays-answers.md'
           - Records:
             - Records: '01-software-development/04-software-implementation/records/4.7-records.md'
             - Arrays of Records: '01-software-development/04-software-implementation/records/4.8-arrays-of-records.md'
