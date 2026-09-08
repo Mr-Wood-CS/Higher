@@ -4833,12 +4833,8 @@ your code and its output, then paste it into your workbook.</p>
 </tr>
 </tbody>
 </table>
-<p>The expected output matches the supplied <code>print()</code> statement: commas add
-spaces between the values, and Python does not retain trailing decimal
-zeros from numeric literals such as <code>2.50</code>. To display prices with exactly
-two decimal places, you could instead use
-<code>print(f"{product_names[index]} £{product_prices[index]:.2f}")</code> inside the
-loop. This would display, for example, <code>Notebook £2.50</code>.</p>
+<p>Commas in <code>print()</code> put a space between each value. Python displays <code>2.50</code>
+as <code>2.5</code> and <code>3.00</code> as <code>3.0</code>; these are the same numeric values.</p>
 </div>
 
 

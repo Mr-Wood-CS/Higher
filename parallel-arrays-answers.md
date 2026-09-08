@@ -1,14 +1,14 @@
 # Parallel Arrays: Answers and Programs
 
-[Return to the tasks](4.3.2-parallel-arrays-putting-it-all-together.md)
-
 These are example solutions. Other programs are valid if they meet the task
 requirements and preserve the relationships between corresponding elements.
 Each code block is a complete program that can be run independently.
 
 ## Task 1: Club Attendance
 
-```python linenums="1"
+### (a) Example program
+
+```python
 member_names = ["Aisha", "Ben", "Cara", "Dylan"]
 sessions_attended = [6, 3, 5, 0]
 
@@ -36,7 +36,7 @@ Aisha : 6 sessions
 Cara : 5 sessions
 ```
 
-### Explanation answer
+### (b) Written answer
 
 `member_names[0]` is Aisha, but `sessions_attended[1]` is Ben's attendance
 figure, 3. Combining them incorrectly reports that Aisha attended 3 sessions
@@ -51,7 +51,9 @@ Dylan's 0 is displayed in the full list but excluded from the filtered list.
 As specified in the task, this version assumes a valid correction index and
 non-negative whole-number distances.
 
-```python linenums="1"
+### (a) Example program
+
+```python
 pupil_names = []
 distances_km = []
 
@@ -93,7 +95,7 @@ Corrected distances
 2 : Grace - 5 km
 ```
 
-### Explanation answer
+### (b) Written answer
 
 Correcting a distance changes one value for an existing pupil. The pupil's
 name and index stay the same, so only `distances_km[correction_index]` changes.
@@ -111,7 +113,9 @@ is calculated for each item; there is no separate array of hard-coded results.
 The program displays the original equipment, appends the projector, and then
 displays all five items to demonstrate the addition test.
 
-```python linenums="1"
+### (a) Example program
+
+```python
 def display_equipment(equipment_names, total_owned, on_loan):
     for index in range(len(equipment_names)):
         available = total_owned[index] - on_loan[index]
@@ -158,13 +162,15 @@ The calculations are `12 - 9 = 3`, `5 - 5 = 0`, `8 - 2 = 6`,
 loop include the projector without manually changing its stopping value.
 The other two arrays must have matching lengths and corresponding values.
 
-## Extension 1: Validate a Correction Index
+## Extension 1: Check the Pupil Index
 
 This complete version of Task 2 rejects out-of-range indexes before changing
 a distance. As specified, it assumes integer input; it does not validate
 non-numeric text or negative distances.
 
-```python linenums="1"
+### (a) Example program
+
+```python
 pupil_names = []
 distances_km = []
 
@@ -191,7 +197,7 @@ for index in range(len(pupil_names)):
     print(index, ":", pupil_names[index], "-", distances_km[index], "km")
 ```
 
-### Test results
+### (b) Test results
 
 With three pupils, valid indexes are `0`, `1` and `2`.
 
@@ -211,12 +217,14 @@ index at least as large as the list length must be rejected. Python normally
 allows `-1` to access the final element, so an explicit lower-bound check is
 necessary for this task.
 
-## Extension 2: Remove an Equipment Item
+## Extension 2: Remove the Camera
 
 This complete program includes the projector addition from Task 3, then removes
 the camera from all three arrays.
 
-```python linenums="1"
+### (a) Example program
+
+```python
 def display_equipment(equipment_names, total_owned, on_loan):
     for index in range(len(equipment_names)):
         available = total_owned[index] - on_loan[index]
@@ -263,7 +271,7 @@ Projector : 2 available
 Array lengths: 4 4 4
 ```
 
-### Explanation answer
+### (b) Written answer
 
 Deleting an element shifts the later elements in that array one position to
 the left. Deleting index `1` from all three arrays removes the camera's name,
