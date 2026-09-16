@@ -52,6 +52,9 @@ nav:
           - Floating-Point Representation:
             - Explanation: '02-computer-systems/2.2-Floating-Point-Representation.md'
             - Tasks: '02-computer-systems/2.2.1-floating-point-representation-tasks.md'
+          - Range of Positive and Negative Integers:
+            - Explanation: '02-computer-systems/2.3-range-of-positive-and-negative-integers.md'
+            - Tasks: '02-computer-systems/2.3.1-2.3-range-of-positive-and-negative-integers-tasks.md'
         - Computer Architecture:
           - Components and Buses:
             - Explanation: '02-computer-systems/computer-architecture/3.1-computer-architecture.md'
@@ -150,6 +153,9 @@ markdown_extensions:
           pygments_lang_class: true
       - pymdownx.inlinehilite
       - pymdownx.snippets
+
+extra_css:
+  - assets/styles.css
       
 theme:
   name: material
