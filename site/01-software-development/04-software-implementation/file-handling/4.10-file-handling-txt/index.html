@@ -1800,6 +1800,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#appending-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Appending Data
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#reading-a-whole-file" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5193,6 +5204,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#appending-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Appending Data
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#reading-a-whole-file" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5329,8 +5351,9 @@
 <p>You must be able to describe, exemplify and implement opening, creating,
 reading, writing and closing sequential text files.</p>
 </div>
-<p>A file keeps data after a program stops. A <strong>sequential file</strong> is processed in
-order, from the beginning to the end.</p>
+<p>A file stores data so that it is available after a program stops. A <strong>text
+file</strong> stores data as characters. When reading a file <strong>sequentially</strong>, a
+program processes its contents in order, from the beginning to the end.</p>
 <h2 id="file-modes">File Modes</h2>
 <table>
 <thead>
@@ -5354,10 +5377,12 @@ order, from the beginning to the end.</p>
 <tr>
 <td><code>"a"</code></td>
 <td>Append</td>
-<td>New data is added at the end.</td>
+<td>New data is added at the end; the file is created if it does not exist.</td>
 </tr>
 </tbody>
 </table>
+<p>The examples below use filenames without a folder path, so Python looks for
+or creates the files in the program's current working folder.</p>
 <h2 id="creating-and-writing">Creating and Writing</h2>
 <div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
 <span class="normal"><a href="#__codelineno-0-2">2</a></span>
@@ -5369,66 +5394,73 @@ order, from the beginning to the end.</p>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">"64</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
 </span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="n">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </span></code></pre></div></td></tr></tbody></table></div>
-<p>Opening with <code>"w"</code> creates <code>scores.txt</code> if required. <code>\n</code> starts a new line.
-The file is closed after the program finishes using it.</p>
+<p><code>open()</code> opens the file and returns a file object, stored here in <code>file</code>.
+Opening with <code>"w"</code> creates <code>scores.txt</code> if it does not already exist.
+<code>write()</code> writes a string to the file. It does not add a newline automatically,
+so <code>\n</code> is included to put each score on a separate line.</p>
+<p><code>close()</code> finishes writing any buffered data and releases the file's resources.
+Always close a file when the program has finished using it.</p>
 <div class="admonition warning">
 <p class="admonition-title">Write mode</p>
 <p>Opening an existing file with <code>"w"</code> removes its previous contents.</p>
 </div>
-<h2 id="reading-a-whole-file">Reading a Whole File</h2>
+<h2 id="appending-data">Appending Data</h2>
+<p>To add another score without removing the existing scores, use append mode:</p>
 <div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
 <span class="normal"><a href="#__codelineno-1-2">2</a></span>
-<span class="normal"><a href="#__codelineno-1-3">3</a></span>
-<span class="normal"><a href="#__codelineno-1-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"scores.txt"</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="n">contents</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"scores.txt"</span><span class="p">,</span> <span class="s2">"a"</span><span class="p">)</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">"81</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="n">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">contents</span><span class="p">)</span>
 </span></code></pre></div></td></tr></tbody></table></div>
-<h2 id="reading-one-line-at-a-time">Reading One Line at a Time</h2>
+<h2 id="reading-a-whole-file">Reading a Whole File</h2>
 <div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
 <span class="normal"><a href="#__codelineno-2-2">2</a></span>
 <span class="normal"><a href="#__codelineno-2-3">3</a></span>
-<span class="normal"><a href="#__codelineno-2-4">4</a></span>
-<span class="normal"><a href="#__codelineno-2-5">5</a></span>
-<span class="normal"><a href="#__codelineno-2-6">6</a></span>
-<span class="normal"><a href="#__codelineno-2-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"scores.txt"</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">file</span><span class="p">:</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a>    <span class="n">score</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">score</span><span class="p">)</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="n">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"scores.txt"</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="n">contents</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="n">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">contents</span><span class="p">)</span>
 </span></code></pre></div></td></tr></tbody></table></div>
-<p><code>strip()</code> removes the newline character and <code>int()</code> converts the text into an
-integer.</p>
-<div class="admonition question">
-<p class="admonition-title">Check Your Understanding</p>
-<p>A club needs a program that saves two member names to a text file. The
-program that creates the file is shown below.</p>
+<p><code>read()</code> reads all the remaining contents into one string, including newline
+characters. The string is still available after the file is closed.</p>
+<h2 id="reading-one-line-at-a-time">Reading One Line at a Time</h2>
 <div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
 <span class="normal"><a href="#__codelineno-3-2">2</a></span>
 <span class="normal"><a href="#__codelineno-3-3">3</a></span>
-<span class="normal"><a href="#__codelineno-3-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"names.txt"</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">)</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">"Aisha</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">"Lewis</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="n">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="normal"><a href="#__codelineno-3-4">4</a></span>
+<span class="normal"><a href="#__codelineno-3-5">5</a></span>
+<span class="normal"><a href="#__codelineno-3-6">6</a></span>
+<span class="normal"><a href="#__codelineno-3-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"scores.txt"</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">file</span><span class="p">:</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4"></a>    <span class="n">score</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">score</span><span class="p">)</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6"></a>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="n">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </span></code></pre></div></td></tr></tbody></table></div>
-<p>Create and test the reading program in Python. Take a screenshot showing
-your code and its output, then paste it into your workbook.</p>
-<p>Answer the written questions in your workbook and complete the program:</p>
+<p>The loop reads each line in order until it reaches the end of the file.
+<code>strip()</code> removes whitespace from both ends of the line, including its newline
+character. <code>int()</code> converts the remaining text into an integer so that it can
+be used in calculations. This example assumes each line contains a whole number.</p>
+<p>When writing a number to a text file, convert it to a string first, for example
+<code>file.write(str(score) + "\n")</code>.</p>
+<div class="admonition question">
+<p class="admonition-title">Check Your Understanding</p>
+<p>Create a Python program for a club that:</p>
 <ol>
-<li>identify the operation that creates the file</li>
-<li>explain what <code>"w"</code> means</li>
-<li>explain why <code>\n</code> is used</li>
-<li>write code that opens <code>names.txt</code>, reads it sequentially and displays
-   both names</li>
+<li>asks the user to enter two member names</li>
+<li>creates <code>names.txt</code> and writes each name on a separate line</li>
+<li>closes the file, then opens it again for reading</li>
+<li>reads the names sequentially and displays each name on a separate line,
+   without extra blank lines</li>
+<li>closes the file after reading it.</li>
 </ol>
-<p>Use the following table to test your program:</p>
+<p>Test your program using the following data:</p>
 <table>
 <thead>
 <tr>
-<th>File contents</th>
-<th>Expected output</th>
+<th>Names entered</th>
+<th>Expected file contents and displayed names</th>
 </tr>
 </thead>
 <tbody>
