@@ -1,0 +1,23 @@
+.range-table-wrap {
+    margin: 1rem 0;
+    overflow-x: auto;
+}
+
+.range-table {
+    border-collapse: collapse;
+    display: table;
+    margin: 0 auto;
+    width: auto;
+}
+
+.range-table th,
+.range-table td {
+    border: 1px solid #666;
+    padding: 0.55rem 0.75rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.range-table th {
+    font-weight: 700;
+}
