@@ -44,15 +44,9 @@ nav:
             - Putting It All Together: '01-software-development/04-software-implementation/algorithms/4.16-algorithms-putting-it-all-together.md'
     - Computer Systems:
         - Data Representation:
-          - Storing Negative Numbers: 
-            - Two's Compliment: '02-computer-systems/2.1-twos-compliment.md'
-            - Tasks: '02-computer-systems/2.1.1-twos-compliment-tasks.md'
-          - Floating-Point Representation:
-            - Explanation: '02-computer-systems/2.2-Floating-Point-Representation.md'
-            - Tasks: '02-computer-systems/2.2.1-floating-point-representation-tasks.md'
-          - Range of Positive and Negative Integers:
-            - Explanation: '02-computer-systems/2.3-range-of-positive-and-negative-integers.md'
-            - Tasks: '02-computer-systems/2.3.1-2.3-range-of-positive-and-negative-integers-tasks.md'
+          - Storing Negative Numbers: '02-computer-systems/2.1-twos-compliment.md'
+          - Floating-Point Representation: '02-computer-systems/2.2-Floating-Point-Representation.md'
+          - Range of Positive and Negative Integers: '02-computer-systems/2.3-range-of-positive-and-negative-integers.md'
         - Computer Architecture:
           - Components and Buses: '02-computer-systems/computer-architecture/3.1-computer-architecture.md'
           - Fetch–Execute Cycle: '02-computer-systems/computer-architecture/3.2-fetch-execute-cycle.md'
