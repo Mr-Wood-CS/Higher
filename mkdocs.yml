@@ -18,7 +18,6 @@ nav:
           - Wireframes: '01-software-development/3.1.4-wireframes.md'
           - Design Tasks: '01-software-development/3.1.5-design-modules-data-flow-tasks.md'
         - Implementation:
-          - Overview: '01-software-development/4.0-implementation-overview.md'
           - Sub-programs:
             - Planning: '01-software-development/04-software-implementation/4.1-subprograms/4.1-sub-programs.md'
             - Creating and Calling: '01-software-development/04-software-implementation/4.1-subprograms/4.2-parameter-passing.md'
@@ -30,7 +29,6 @@ nav:
           - Parallel 1D Arrays:
             - Explanation: '01-software-development/04-software-implementation/4.3-parallel-arrays/4.3.1-parallel-1d-arrays.md'
             - Tasks: '01-software-development/04-software-implementation/4.3-parallel-arrays/4.3.2-parallel-arrays-putting-it-all-together.md'
-            #- Answers and Programs: '01-software-development/04-software-implementation/4.3-parallel-arrays/4.3.3-parallel-arrays-answers.md'
           - Records:
             - Records: '01-software-development/04-software-implementation/records/4.7-records.md'
             - Arrays of Records: '01-software-development/04-software-implementation/records/4.8-arrays-of-records.md'
@@ -58,13 +56,10 @@ nav:
         - Computer Architecture:
           - Components and Buses:
             - Explanation: '02-computer-systems/computer-architecture/3.1-computer-architecture.md'
-            - Tasks: '02-computer-systems/computer-architecture/3.1.1-computer-architecture-tasks.md'
           - Fetch–Execute Cycle:
             - Explanation: '02-computer-systems/computer-architecture/3.2-fetch-execute-cycle.md'
-            - Tasks: '02-computer-systems/computer-architecture/3.2.1-fetch-execute-cycle-tasks.md'
           - System Performance:
             - Explanation: '02-computer-systems/computer-architecture/3.3-system-performance.md'
-            - Tasks: '02-computer-systems/computer-architecture/3.3.1-system-performance-tasks.md'
     - Database Design and Development:
         - Overview: '03-database-development/index.md'
         - Analysis:
