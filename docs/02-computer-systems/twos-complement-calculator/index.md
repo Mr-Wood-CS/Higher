@@ -1,6 +1,6 @@
 # Two's Complement Calculator
 
-[Back to Two's Complement Tasks](../2.1.1-twos-compliment-tasks.md)
+[Back to Storing Negative Numbers](../01-data-representation/1.1-twos-compliment.md)
 
 Enter the negative number you want to convert, then complete the three rows.
 
