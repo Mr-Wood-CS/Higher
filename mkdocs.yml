@@ -54,12 +54,9 @@ nav:
             - Explanation: '02-computer-systems/2.3-range-of-positive-and-negative-integers.md'
             - Tasks: '02-computer-systems/2.3.1-2.3-range-of-positive-and-negative-integers-tasks.md'
         - Computer Architecture:
-          - Components and Buses:
-            - Explanation: '02-computer-systems/computer-architecture/3.1-computer-architecture.md'
-          - Fetch–Execute Cycle:
-            - Explanation: '02-computer-systems/computer-architecture/3.2-fetch-execute-cycle.md'
-          - System Performance:
-            - Explanation: '02-computer-systems/computer-architecture/3.3-system-performance.md'
+          - Components and Buses: '02-computer-systems/computer-architecture/3.1-computer-architecture.md'
+          - Fetch–Execute Cycle: '02-computer-systems/computer-architecture/3.2-fetch-execute-cycle.md'
+          - System Performance: '02-computer-systems/computer-architecture/3.3-system-performance.md'
     - Database Design and Development:
         - Overview: '03-database-development/index.md'
         - Analysis:
