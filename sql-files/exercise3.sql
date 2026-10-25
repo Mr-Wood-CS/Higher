@@ -1,4 +1,5 @@
-SET NAMES utf8mb4;
+-- SQLite setup: creates and resets the six exercise tables.
+-- From the Higher folder: sqlite3 sql-files/exercise3.db < sql-files/exercise3.sql
 
 -- Question1
 
@@ -12,13 +13,13 @@ CREATE TABLE `Question1` (
   `test2` tinyint DEFAULT NULL,
   `test3` tinyint DEFAULT NULL,
   `test4` tinyint DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
+);
 
 INSERT INTO `Question1` VALUES
     (1,'Jane','Smith',9,7,8,6),
     (2,'Duncan','Scott',10,8,9,8),
     (3,'James','Webster',8,6,7,9),
-    (4,'Julie','O\'Brian',7,6,9,5),
+    (4,'Julie','O''Brian',7,6,9,5),
     (5,'Mary','Davis',9,9,7,5),
     (6,'Adam','Young',10,8,7,6),
     (7,'Holly','Jeffreys',8,7,6,9),
@@ -34,7 +35,7 @@ CREATE TABLE `Question2` (
   `Surname` varchar(7) DEFAULT NULL,
   `hourlyRate` decimal(2,1) DEFAULT NULL,
   `hoursWorked` tinyint DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
+);
 
 INSERT INTO `Question2` VALUES
     (1,'Kenneth','Brown',7.5,20),
@@ -56,7 +57,7 @@ CREATE TABLE `Question3` (
   `test3` tinyint DEFAULT NULL,
   `test4` tinyint DEFAULT NULL,
   `test5` tinyint DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
+);
 
 INSERT INTO `Question3` VALUES
     (1,'Bill','Johnstone',15,12,12,13,14),
@@ -74,7 +75,7 @@ CREATE TABLE `Question4` (
   `productName` varchar(8) DEFAULT NULL,
   `buyingPrice` tinyint DEFAULT NULL,
   `sellingPrice` tinyint DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
+);
 
 INSERT INTO `Question4` VALUES
     (1,'Mars Bar',27,42),
@@ -90,7 +91,7 @@ CREATE TABLE `Question5` (
   `productName` varchar(19) DEFAULT NULL,
   `productID` smallint DEFAULT NULL,
   `priceUK` decimal(3,1) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
+);
 
 INSERT INTO `Question5` VALUES
     ('Network Card',2,13.5),
@@ -108,7 +109,7 @@ CREATE TABLE `Question6` (
   `fishType` varchar(11) DEFAULT NULL,
   `pricePerKilo` decimal(4,2) DEFAULT NULL,
   `numberOfKilos` decimal(2,1) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
+);
 
 INSERT INTO `Question6` VALUES
     ('Haddock',12.00,5.0),

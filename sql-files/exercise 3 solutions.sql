@@ -1,3 +1,8 @@
+-- In VS Code, use SQLite: Open Database and select exercise3.db.
+-- Highlight a query below and use SQLite: Run Selected Query.
+
+-- database: exercise3.db
+
 -- Question 1(a)
 SELECT Forename, Surname, test1 + test2 + test3 AS totalMark
 FROM Question1;
