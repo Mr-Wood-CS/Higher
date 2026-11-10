@@ -21,3 +21,29 @@
 .range-table th {
     font-weight: 700;
 }
+
+.md-typeset table.test-plan-table:not([class~="highlight"]) {
+    border: 1px solid #666;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 0.75rem;
+}
+
+.md-typeset table.test-plan-table:not([class~="highlight"]) th,
+.md-typeset table.test-plan-table:not([class~="highlight"]) td {
+    border: 1px solid #666;
+    padding: 0.6rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.md-typeset table.test-plan-table:not([class~="highlight"]) thead th {
+    background-color: #e3edf7;
+    color: #172b4d;
+    font-weight: 700;
+}
+
+.md-typeset table.test-plan-table tbody th {
+    font-weight: 700;
+    text-align: center;
+}
